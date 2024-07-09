@@ -82,7 +82,7 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
-        if (isAlive == false) return;
+        if (isAlive == false) return; //nhảy
         rig.velocity = new Vector2(rig.velocity.x, jumpForce);
     }
     void Climb()
