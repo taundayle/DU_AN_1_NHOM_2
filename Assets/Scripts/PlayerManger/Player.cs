@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     //Flipx
     [SerializeField] private bool IsRightFace = true;
     //Player Die
-    bool isAlive = true;
     public float timer; //kiểm tra time
 
 
@@ -39,7 +38,6 @@ public class Player : MonoBehaviour
     {
         //Kiểm tra mặt đất
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
-        if (isAlive == false) return;
         //Điều kiện di chuyển
         float moveInput = gameInput.HorizontalInput;
         rig.velocity = new Vector2(moveInput * moveSpeed, rig.velocity.y);
@@ -69,7 +67,6 @@ public class Player : MonoBehaviour
     }
     void RightFace() //Lật mặt
     {
-        if (isAlive == false) return;
         if (IsRightFace == true)
         {
             transform.localScale = new Vector3(1, 1, 1);
@@ -79,16 +76,14 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1);
         }
     }
-
     void Jump()
     {
-        if (isAlive == false) return; //nhảy
+         //nhảy
         rig.velocity = new Vector2(rig.velocity.x, jumpForce);
     }
     void Climb()
     {
         //Leo cầu thang
-        if (isAlive == false) return;
         if (isClimbing)
         {
             float climbInput = Input.GetAxisRaw("Vertical");                        //Ấn phím để leo cầu thang
@@ -97,7 +92,6 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isAlive == false) return;
         if (collision.CompareTag("Ladder")) //Chạm cầu thang
         {
             isClimbing = true;
@@ -106,7 +100,6 @@ public class Player : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (isAlive == false) return;
         if (collision.CompareTag("Ladder")) //Rời khỏi cầu thang
         {
             isClimbing = false;

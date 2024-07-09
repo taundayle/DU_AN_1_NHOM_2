@@ -28,7 +28,7 @@ public class Anim_Player : MonoBehaviour
     }
     void Jump()
     {
-        if (pl.isGrounded == false && pl.isClimbing == false && !Input.GetKey(KeyCode.J) && !Input.GetMouseButton(0))
+        if (pl.isGrounded == false /*&& pl.isClimbing == false*/ && !Input.GetKey(KeyCode.J) && !Input.GetMouseButton(0))
         {
             anim.SetBool("Jump", true);
         }
