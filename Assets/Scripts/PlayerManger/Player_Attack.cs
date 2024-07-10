@@ -19,7 +19,7 @@ public class Player_Attack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space)) 
+        if(Input.GetKeyDown(KeyCode.J) || Input.GetMouseButton(0)) 
         { 
             Attack();
         }

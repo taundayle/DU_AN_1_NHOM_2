@@ -7,6 +7,7 @@ public class Anim_Player : MonoBehaviour
     private Player pl;
     private MoveInput gameInput;
     Animator anim;
+    private bool change;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,15 @@ public class Anim_Player : MonoBehaviour
         Run();
         Jump();
         Shoot();
+        Attack();
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            change = true;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            change = false;
+        }
     }
     void Run()
     {
@@ -38,15 +48,33 @@ public class Anim_Player : MonoBehaviour
             anim.SetBool("Jump", false);
         }
     }
+    void Attack()
+    {
+        if (change == false)
+        {
+            if(Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+            {
+                anim.SetBool("Gun", true);
+            }
+            else
+            {
+                anim.SetBool("Gun", false);
+            }
+        }
+    }
     void Shoot()
     {
-        if (Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+        if (change == true)
         {
-            anim.SetBool("Gun", true);
+            if(Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+            {
+                anim.SetBool("Gun2", true);
+            }
+            else
+            {
+                anim.SetBool("Gun2", false);
+            }
         }
-        else
-        {
-            anim.SetBool("Gun", false);
-        }
+
     }
 }
