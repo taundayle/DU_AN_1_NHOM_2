@@ -939,7 +939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385c4f033687a6643908e80cddb713a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullets: 3
+  bullets: 10
   bulletspawn: {fileID: 1559626171}
   attackspawn: {fileID: 1898012507}
   ultitspawn: {fileID: 60443276}
