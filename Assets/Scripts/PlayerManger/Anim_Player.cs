@@ -20,6 +20,7 @@ public class Anim_Player : MonoBehaviour
     {
         Run();
         Jump();
+        Shoot();
     }
     void Run()
     {
@@ -35,6 +36,17 @@ public class Anim_Player : MonoBehaviour
         else
         {
             anim.SetBool("Jump", false);
+        }
+    }
+    void Shoot()
+    {
+        if (Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+        {
+            anim.SetBool("Gun", true);
+        }
+        else
+        {
+            anim.SetBool("Gun", false);
         }
     }
 }
