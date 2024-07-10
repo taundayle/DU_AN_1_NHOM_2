@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Anim_Player : MonoBehaviour
 {
+    //Gun gun;
     private Player pl;
     private MoveInput gameInput;
     Animator anim;
-    private bool change;
+    private bool ban;
+    private bool chem;
+    private bool ulti;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,13 +26,24 @@ public class Anim_Player : MonoBehaviour
         Jump();
         Shoot();
         Attack();
+        Ulti();
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            change = true;
+            ulti = false;
+            ban = true;
+            chem = false;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            change = false;
+            chem = true;
+            ulti = false;
+            ban = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) 
+        {
+            ulti = true;
+            chem = false;
+            ban = false;
         }
     }
     void Run()
@@ -50,7 +64,7 @@ public class Anim_Player : MonoBehaviour
     }
     void Attack()
     {
-        if (change == false)
+        if (chem == true)
         {
             if(Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
             {
@@ -64,9 +78,9 @@ public class Anim_Player : MonoBehaviour
     }
     void Shoot()
     {
-        if (change == true)
+        if (ban == true)
         {
-            if(Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+            if (Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
             {
                 anim.SetBool("Gun2", true);
             }
@@ -75,6 +89,19 @@ public class Anim_Player : MonoBehaviour
                 anim.SetBool("Gun2", false);
             }
         }
-
+    }
+    void Ulti()
+    {
+        if (ulti == true)
+        {
+            if (Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+            {
+                anim.SetBool("Gun3", true);
+            }
+            else
+            {
+                anim.SetBool("Gun3", false);
+            }
+        }
     }
 }

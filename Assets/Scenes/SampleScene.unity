@@ -325,6 +325,37 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &60443275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 60443276}
+  m_Layer: 6
+  m_Name: UltiSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &60443276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60443275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.05, y: -1.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 353693737}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79521802
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +803,7 @@ Transform:
   - {fileID: 2078251402}
   - {fileID: 1559626171}
   - {fileID: 1898012507}
+  - {fileID: 60443276}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &353693738
@@ -907,13 +939,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385c4f033687a6643908e80cddb713a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullets: 2
+  bullets: 3
   bulletspawn: {fileID: 1559626171}
   attackspawn: {fileID: 1898012507}
+  ultitspawn: {fileID: 60443276}
   attackprefabs: {fileID: 548785107768131510, guid: f16e0dccc25741f4fa488505dbfd75a9, type: 3}
   bulletprefabs: {fileID: 3650724301685256808, guid: 76692648b8df13d4ab4050f96479038e, type: 3}
+  ultitsprefabs: {fileID: 8958824461614515738, guid: ca83451edbdef4647a14958a8e9e40d1, type: 3}
   isShooting: 0
-  change: 0
+  ban: 0
+  chem: 0
+  ulti: 0
 --- !u!1 &386695698
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,9 +2433,9 @@ MonoBehaviour:
   m_ComponentVersion: 1
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.425
+  m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 0.6745098, b: 0.26666668, a: 1}
-  m_Intensity: 356.64
+  m_Intensity: 339.8
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 8df038438fc76d2600000000ed1ff7728d3531c1d199c38c7d0f676a
@@ -2419,7 +2455,7 @@ MonoBehaviour:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
   m_PointLightInnerAngle: 0
-  m_PointLightOuterAngle: 48.99
+  m_PointLightOuterAngle: 48.98999
   m_PointLightInnerRadius: 0
   m_PointLightOuterRadius: 14.147138
   m_ShapeLightParametricSides: 5
