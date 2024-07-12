@@ -105,4 +105,12 @@ public class GameSession : MonoBehaviour
             liveSlider.value = playerlives;
         }
     }
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+    }
 }

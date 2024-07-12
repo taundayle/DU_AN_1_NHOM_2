@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BulletCoin : MonoBehaviour
 {
-    public float speedbullet;
     private Rigidbody2D Bullett;
     private bool isBullet = true;
     void Start()
