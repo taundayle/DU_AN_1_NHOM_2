@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class BulletUlti : MonoBehaviour
 {
     public float speedbullet;
     private Rigidbody2D Bullett;
@@ -42,7 +42,7 @@ public class Bullet : MonoBehaviour
         if (collider.GetComponent<Health>() != null)
         {
             Health health = collider.GetComponent<Health>();
-            health.TakeLife(2);
+            health.TakeLife(5);
         }
         //if (collision.CompareTag("Player"))
         //{

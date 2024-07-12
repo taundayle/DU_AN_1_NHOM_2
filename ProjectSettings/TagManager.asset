@@ -7,6 +7,9 @@ TagManager:
   - Slime
   - Ground
   - Ladder
+  - Bullet
+  - Ulti
+  - Attack
   layers:
   - Default
   - TransparentFX

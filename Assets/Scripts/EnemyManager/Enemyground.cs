@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_ground : MonoBehaviour
+public class Enemyground : MonoBehaviour
 {
     [SerializeField] float start, end, speed;
     Rigidbody2D rig;
@@ -44,5 +44,7 @@ public class Enemy_ground : MonoBehaviour
     {
         Run();
         Flip();
+        
     }
+
 }
