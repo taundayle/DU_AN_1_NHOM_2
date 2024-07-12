@@ -1232,6 +1232,7 @@ Transform:
   - {fileID: 2078251402}
   - {fileID: 1559626171}
   - {fileID: 1898012507}
+  - {fileID: 1884255019}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &353693738
@@ -1370,10 +1371,14 @@ MonoBehaviour:
   bullets: 2
   bulletspawn: {fileID: 1559626171}
   attackspawn: {fileID: 1898012507}
+  ultitspawn: {fileID: 1884255019}
   attackprefabs: {fileID: 548785107768131510, guid: f16e0dccc25741f4fa488505dbfd75a9, type: 3}
   bulletprefabs: {fileID: 3650724301685256808, guid: 76692648b8df13d4ab4050f96479038e, type: 3}
+  ultitsprefabs: {fileID: 8958824461614515738, guid: ca83451edbdef4647a14958a8e9e40d1, type: 3}
   isShooting: 0
-  change: 0
+  ban: 0
+  chem: 0
+  ulti: 0
 --- !u!1 &353741241
 GameObject:
   m_ObjectHideFlags: 0
@@ -12638,6 +12643,37 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!1 &1884255018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884255019}
+  m_Layer: 6
+  m_Name: UltiSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1884255019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884255018}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.07, y: -1.02, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 353693737}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1898012506
 GameObject:
   m_ObjectHideFlags: 0
