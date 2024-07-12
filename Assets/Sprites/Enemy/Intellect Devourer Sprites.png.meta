@@ -1,0 +1,963 @@
+fileFormatVersion: 2
+guid: f7727795aadb5694bae4563b4e2c94bb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 160
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d38134417f755478afb55a806417a7
+      internalID: -2073789938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 160
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e14a39b14bb313a429ccbece5d80ca5d
+      internalID: -1852963859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 160
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa58f5c382a6f804ebe114f33f3e6869
+      internalID: -2135724466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 160
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd56d62765f55e646aab998ba87a47cd
+      internalID: 1050730571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 128
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b40af6ab77b8954988c29899c462f98
+      internalID: -2089513390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 130
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f559f54981b92f4a83b02fc1c4ee488
+      internalID: -1324008175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 134
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bcaf215789906548a2fbdf2ef711ed9
+      internalID: 1318457312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 130
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d5e717b5848a34caddce885bc8c581
+      internalID: -1225797436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 128
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4652fb5c9d07fb14ebf29a89af5a15b2
+      internalID: 761143569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 130
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e08fb6471397b14490e000024d81bf2
+      internalID: 2142833621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 131
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174c64371d86e6e4bbeaa4bc62a0eb57
+      internalID: 1930351165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 130
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44684a1a57eb0347bf6dff74af94d6a
+      internalID: -2127388159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 96
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f674f762abc81864098926e0b6a27d6c
+      internalID: -1340230598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 96
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5aeb3de9d521542901fa6903f2705e
+      internalID: 1511273495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 96
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baaf651bb8896194486f5d52c9d1bcf1
+      internalID: 549962764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 97
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c121c1c9749d63049a20a8b3bcf05b2f
+      internalID: -980616571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 98
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36beedb04f9f36c4dba64f527b75c299
+      internalID: -1988133803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 96
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5d4b4db04e58946b38056a17b34b47
+      internalID: -1115603250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c53b178017f19042a7d62814c407623
+      internalID: 944211216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 76
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32d7cac11d4797409b5d8051b4fcf62
+      internalID: -825362898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 76
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55bcb46f43201d4a930ab38f6a26f5b
+      internalID: -1760895978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 75
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a6e1b2299e4cd4ba6218dc5b7fed5b
+      internalID: -1082832106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 75
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acebc5dbf6148d34895624cdda7fa4a5
+      internalID: -6347728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 64
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4e68acb8cd83745878cb102c87f83e
+      internalID: 318759212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 64
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fe0b2f328ff8e46b4e13a3e9313b40
+      internalID: 859024322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 64
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df4c6326faee184a8372fcfccd772c1
+      internalID: 1272133016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 64
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c545bf3bf6f5640a3d6b40cb88b4ac
+      internalID: -1422757724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 64
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ece3a1585be1741975598b87fd87f8
+      internalID: 1119997150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 64
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde0d02a168d09e4291cd9a528f53217
+      internalID: 1161921760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 64
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bead3c6a4363f245815b1c3e6a8f7d0
+      internalID: 1680607842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 32
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852656d3cd514dd45bf0136ff0d38c30
+      internalID: -202016798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_31
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 32
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6380922538f4c41a140cb1a58dd19e
+      internalID: -719729905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_32
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 32
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294aa1326aa8e3e4d96fd5162d206064
+      internalID: 1958040479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_33
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 32
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85a2184e091a0a4194a92af5aea0d3b
+      internalID: -1284404848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_34
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8393d398f48154d4a9cf8bc5238c0b0e
+      internalID: -1492274353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_35
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafa50ecdaddf82469783aa2cbcf2303
+      internalID: -498842839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_36
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d864826d6921604abd2da2f144c2790
+      internalID: 364763426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Intellect Devourer Sprites_37
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef80b7be5db1d0349a5a9132b2a74c1d
+      internalID: 911724685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Intellect Devourer Sprites_0: -2073789938
+      Intellect Devourer Sprites_1: -1852963859
+      Intellect Devourer Sprites_10: 1930351165
+      Intellect Devourer Sprites_11: -2127388159
+      Intellect Devourer Sprites_12: -1340230598
+      Intellect Devourer Sprites_13: 1511273495
+      Intellect Devourer Sprites_14: 549962764
+      Intellect Devourer Sprites_15: -980616571
+      Intellect Devourer Sprites_16: -1988133803
+      Intellect Devourer Sprites_17: -1115603250
+      Intellect Devourer Sprites_18: 944211216
+      Intellect Devourer Sprites_19: -825362898
+      Intellect Devourer Sprites_2: -2135724466
+      Intellect Devourer Sprites_20: -1760895978
+      Intellect Devourer Sprites_21: -1082832106
+      Intellect Devourer Sprites_22: -6347728
+      Intellect Devourer Sprites_23: 318759212
+      Intellect Devourer Sprites_24: 859024322
+      Intellect Devourer Sprites_25: 1272133016
+      Intellect Devourer Sprites_26: -1422757724
+      Intellect Devourer Sprites_27: 1119997150
+      Intellect Devourer Sprites_28: 1161921760
+      Intellect Devourer Sprites_29: 1680607842
+      Intellect Devourer Sprites_3: 1050730571
+      Intellect Devourer Sprites_30: -202016798
+      Intellect Devourer Sprites_31: -719729905
+      Intellect Devourer Sprites_32: 1958040479
+      Intellect Devourer Sprites_33: -1284404848
+      Intellect Devourer Sprites_34: -1492274353
+      Intellect Devourer Sprites_35: -498842839
+      Intellect Devourer Sprites_36: 364763426
+      Intellect Devourer Sprites_37: 911724685
+      Intellect Devourer Sprites_4: -2089513390
+      Intellect Devourer Sprites_5: -1324008175
+      Intellect Devourer Sprites_6: 1318457312
+      Intellect Devourer Sprites_7: -1225797436
+      Intellect Devourer Sprites_8: 761143569
+      Intellect Devourer Sprites_9: 2142833621
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

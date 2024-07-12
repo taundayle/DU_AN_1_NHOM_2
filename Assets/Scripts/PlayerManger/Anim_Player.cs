@@ -81,7 +81,7 @@ public class Anim_Player : MonoBehaviour
         if (ban == true)
         {
             if (Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
-            {
+            {     
                 anim.SetBool("Gun2", true);
             }
             else

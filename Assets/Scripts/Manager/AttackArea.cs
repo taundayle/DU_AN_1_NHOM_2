@@ -5,6 +5,16 @@ using UnityEngine;
 public class AttackArea : MonoBehaviour
 {
     private int damage = 1;
+    public float timer;
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer > 0.5)
+        {
+            Destroy(gameObject);
+        }
+
+    }
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.GetComponent<Health>() != null)
@@ -13,4 +23,5 @@ public class AttackArea : MonoBehaviour
             health.TakeLife(damage);
         }
     }
+
 }
