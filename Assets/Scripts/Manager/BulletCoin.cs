@@ -23,7 +23,7 @@ public class BulletCoin : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             FindObjectOfType<GameSession>().AddBullet(1);
             FindObjectOfType<Gun>().AddBullet(1);

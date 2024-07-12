@@ -106,7 +106,7 @@ public class Player : MonoBehaviour
             rig.gravityScale = 4f;
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+/*    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Slime")) //Va chạm
         {
@@ -121,5 +121,5 @@ public class Player : MonoBehaviour
                 Debug.Log("Huy anim");
                 //anim.SetBool("PlayerHit", false);
         }
-    }
+    }*/
 }
