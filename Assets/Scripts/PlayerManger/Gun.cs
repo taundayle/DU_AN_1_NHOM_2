@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
+using System;
 
 public class Gun : MonoBehaviour
 {
@@ -9,11 +10,16 @@ public class Gun : MonoBehaviour
     Player pl;
     [SerializeField] Transform bulletspawn;
     [SerializeField] Transform attackspawn;
+    [SerializeField] Transform ultitspawn;
     public GameObject attackprefabs;
     public GameObject bulletprefabs;
+    public GameObject ultitsprefabs;
     public bool isShooting;
-    public bool change = false;
+    [SerializeField] bool ban;
+    [SerializeField] bool chem;
+    [SerializeField] bool ulti;
     private float timer;
+
 
     void Start()
     {
@@ -30,7 +36,7 @@ public class Gun : MonoBehaviour
     }
     public void AddBullet(int num)
     {
-        if (bullets < 5)
+        if (bullets < 10)
         {
             bullets += num;
         }
@@ -44,42 +50,104 @@ public class Gun : MonoBehaviour
         }
 
     }
+    void Ban()
+    {
+        if (Input.GetKeyUp(KeyCode.J) || Input.GetMouseButtonUp(0))
+        {
+            if (bullets >= 1)
+            {
+                Instantiate(bulletprefabs, bulletspawn.position, transform.rotation);
+                isShooting = true;
+                bullets--;
+                FindObjectOfType<GameSession>().BulletCount(1);
+            }
+            else
+            {
+                isShooting = false;
+                Debug.Log("Không đủ năng lượng");
+            }
+        }
+    }
+    void Ulti()
+    {
+        if (Input.GetKeyUp(KeyCode.J) || Input.GetMouseButtonUp(0))
+        {
+            if (bullets >= 3)
+            {
+                Instantiate(ultitsprefabs, ultitspawn.position, transform.rotation);
+                isShooting = true;
+                bullets = bullets - 3;
+                FindObjectOfType<GameSession>().BulletCount(3);
+            }
+            else
+            {
+                isShooting = false;
+                Debug.Log("Không đủ năng lượng");
+            }
+        }
+    }
     void Shoot()
     {
         if (Time.timeScale == 0)
         {
             isShooting = false;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha3)) //Chiêu cuối kích hoạt
         {
-            change = true;
-            Debug.Log("Đã đổi chiêu 2");
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            change = false;
-            Debug.Log("Đã đổi chiêu 1");
-        }
-        if(change == true)
-        {
-            if (Input.GetKeyUp(KeyCode.J) || Input.GetMouseButtonUp(0))
+            if (bullets >= 3)
             {
-                if (bullets >= 1)
+                ulti = true;
+                ban = false;
+                chem = false;
+                if (ulti == true)
                 {
-                    Instantiate(bulletprefabs, bulletspawn.position, transform.rotation);
-                    isShooting = true;
-                    bullets--;
-                    FindObjectOfType<GameSession>().BulletCount(1);
-                }
-                else
-                {
-                    isShooting = false;
+                    Ulti();
+                    Debug.Log("Đã đổi chiêu 3");
                 }
             }
+            else
+            {
+                ulti = false;
+                chem = true;
+                ban = false;
+                Debug.Log("Không đủ năng lượng");
+            }
         }
-        else
+        if (Input.GetKeyDown(KeyCode.Alpha2)) //Bắn kích hoạt
+        {
+            if (bullets >= 1)
+            {
+                ban = true;
+                chem = false;
+                ulti = false;
+                Debug.Log("Đã đổi chiêu 2");
+            }
+            else
+            {
+                ban = false;
+                chem = true;
+                ulti = false;
+                Debug.Log("Không đủ năng lượng");
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha1)) //Chém kích hoạt
+        {
+            ban = false;
+            chem = true;
+            ulti = false;
+            Debug.Log("Đã đổi chiêu 1");
+        }
+        if(ban == true)
+        {
+            Ban();
+        }
+        else if (chem == true)
         {
             Attack();
+        }
+        else if(ulti == true)
+        {
+            Ulti();
         }
     }
 
