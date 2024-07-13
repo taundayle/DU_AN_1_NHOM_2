@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: oppcastle-mod-tiles_58
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 365831432, guid: e9b3f1059d1f78e46a56d8e307cd6406, type: 3}
+  m_Sprite: {fileID: -1954907534, guid: e9b3f1059d1f78e46a56d8e307cd6406, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
