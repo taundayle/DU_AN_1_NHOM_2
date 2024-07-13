@@ -223,7 +223,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1587319557
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &5066420
@@ -5330,7 +5330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 216.11, y: -181.1}
+  m_AnchoredPosition: {x: 216.10999, y: -181.1}
   m_SizeDelta: {x: 382.22, y: 312.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706508341
@@ -11347,10 +11347,10 @@ RectTransform:
   - {fileID: 971337074}
   m_Father: {fileID: 5066420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -30, y: -28}
+  m_SizeDelta: {x: 698, y: 408}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &2135376617 stripped
 RectTransform:
@@ -11701,10 +11701,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2770539169917978735, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -78.69501
+      objectReference: {fileID: 0}
     - target: {fileID: 3046569976536816417, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 3371363776033283338, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -78.69501
+      objectReference: {fileID: 0}
     - target: {fileID: 3691840136894169958, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.615055
@@ -11744,6 +11752,14 @@ PrefabInstance:
     - target: {fileID: 3691840136894169958, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3998546476966131616, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -24.169983
+      objectReference: {fileID: 0}
+    - target: {fileID: 3998546476966131616, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -67.92502
       objectReference: {fileID: 0}
     - target: {fileID: 5649375760700091247, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
       propertyPath: m_Camera
