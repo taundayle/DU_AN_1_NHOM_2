@@ -1,0 +1,1681 @@
+fileFormatVersion: 2
+guid: 3b10a78ad48401140b9272069738c366
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Temple Angkor map object_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dfc91f286b07948b56c14f5abaaff1
+      internalID: -1337892765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9037e8f49126f0a47876863331666d6f
+      internalID: -842494804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed9b5c014cbb3c42b701315bf525a6e
+      internalID: 1991148306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6589c24cb69fb004eb83dfa3aae16a3a
+      internalID: 660626793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86f03f7086d3fe49a5385a66578a0cb
+      internalID: 16055988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29207d6fe8a47648bc98e2637b949b7
+      internalID: 1504029678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_6
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9acbdae65fa9f4f4d92b9760d619c7c5
+      internalID: -1188408268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_7
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 286
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d495c5ab843cfe54a83ecd79ec6136ea
+      internalID: 1953453365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51c2f035ea79a244991c8d66487e2a2
+      internalID: 964511345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_9
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 260
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0529725718391df429170ad7175c2840
+      internalID: -1417748494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_10
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 260
+        width: 23
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 157c05f0ae4102045baaa28cea4819f5
+      internalID: -452869496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 260
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ea45198f9b7df4f96f21a5032107fa
+      internalID: -1481169196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_12
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 262
+        width: 29
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df16e56a6eb95224190b95828bd8e693
+      internalID: -1014612862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_15
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 262
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac990aec66cb90499f626196912567c
+      internalID: 1831004003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_16
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 260
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf416da49f7c5f6409be2afe928cb186
+      internalID: 1858537263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_17
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 259
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b161d17a32f86428b1e7d550623abf
+      internalID: -465677811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_18
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 260
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c731df33b096664e95f795bb30fff2e
+      internalID: -2040368266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d0ae1acd6617f489eb6fe17d2ac1dd
+      internalID: 663348134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_20
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 227
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3707ee7591071f41b02df4d3747a7cf
+      internalID: 824462321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_21
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 227
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691cc25c05544c24ba3f8342a2d85389
+      internalID: 1180913555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_22
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 227
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381a0a84341c07a46bcf0387f6bbb3d3
+      internalID: -1308230571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_23
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 227
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b2f935dd4cce84f8e15a2b41bd2423
+      internalID: -1729921503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_24
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 227
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c42d6d76b983f46ae506d848e3dcb3
+      internalID: -1692412351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_25
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 227
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1b403de39577864fb9d82da125cf12e
+      internalID: 320500134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_26
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 227
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2202ca38bd92449a2637bf72a639cb
+      internalID: 216230263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33146a4815dd05a48801450c854e4b46
+      internalID: 434174486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_28
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 200
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28342906d2d51f44986eb69d4d8ec193
+      internalID: -1198643058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_29
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 200
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9ab35423df3a441886947847e140e9
+      internalID: 2070385616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_30
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 200
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfb3569e10903b4d8431f293b492ea5
+      internalID: -1339527966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_31
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 200
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a913a53d4d0a84db2067e6bd5e474b
+      internalID: -453229295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_32
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 200
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba70b6fa169782142966528fb40b16d6
+      internalID: 673412703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_33
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 200
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b647b9d3002b4c24d8795ecc8cffe105
+      internalID: 1246136990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_34
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 200
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4862f107bedd3e846901c1302aaf8e6c
+      internalID: 1634405667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 173
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d5206178c9b054abe108e982581332
+      internalID: -148916692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_36
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 173
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09a225cf9330b84b946a57e33373c65
+      internalID: -280470071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 173
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b374366b061e2a84089b54a06fc2eb0a
+      internalID: 269578497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_38
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 173
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f88e0e0dfa52464aa2ea64b3ece699f
+      internalID: 2090468107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_39
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 173
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5b75de3d46cef4a89d449155ded8d8
+      internalID: -1462673732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_40
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 173
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b604f82af0eead42825f7c5e8322aed
+      internalID: 2139047251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_41
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 173
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b2f0228c1bc6349a0c7b5b1b9c2339
+      internalID: 87318301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_42
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 173
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d8e458d9f2def4f83ca623f5b50425
+      internalID: 94190546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 146
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd1eff78f2b08145b4be1e2130f200e
+      internalID: 1825337044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_44
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 146
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf10c5d0ee7e0549b5ae74a271c9e35
+      internalID: -900723091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_45
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 146
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5898842e0984dbd409d86923c41a7453
+      internalID: -1114996251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_46
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 148
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a258a8d0384a10446a1316f230de2286
+      internalID: -1114504692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_47
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 147
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c453b1fa39777024ea4545dabff48966
+      internalID: 286581554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_48
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 146
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c192b894679da4ab9fb527a8b9c54b
+      internalID: 899583869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_49
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 146
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9183adbf60a03114b897a929e55c9ceb
+      internalID: 1833179554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_50
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 152
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a31ff18541ae4478c40fc40e24fbbe
+      internalID: 1962536725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_51
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 119
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d56b9063c8b10c45b44fff9c234446d
+      internalID: 349192019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_52
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 92
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18bf7d131c6e8b943923408234d2294e
+      internalID: -624685760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_53
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 119
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c716b79f0c1aa4595b5740c3f3fca1
+      internalID: -967644001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_54
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 92
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6736d28c996e1cc42861ff3c2a634fcb
+      internalID: -1668327737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_55
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 119
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb8beb2ea9a944440871042bdd67b252
+      internalID: -1373888016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_56
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 119
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf939d7d577eeb54183dea09321a8e8c
+      internalID: -1494569276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_57
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 119
+        width: 4
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 234276220b3fd3241a76572bf31fe425
+      internalID: -752982648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_58
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 92
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09364f49df1fa2447905b63c9d2cbc9b
+      internalID: -245444193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_59
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 119
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6944df65484c6e84f86d3411079e9e50
+      internalID: -1586364983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_60
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 119
+        width: 48
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108e424141f0d8241a413dc7b21c3def
+      internalID: 947766719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_61
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 92
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7211427985ed81e45afa4cee9864b03a
+      internalID: -1986526477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_68
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e14bbdda6f7c3548b777385b58f00d0
+      internalID: 875800595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_69
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 65
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74d4fbdcaf7c78479f1d6d483ebfc85
+      internalID: -1344748906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_70
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 82
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1a241b0f0e3cd48ae95b4afb027c59
+      internalID: -165649981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_72
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 65
+        width: 33
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33dfcdc0d010868429924e3763b043cd
+      internalID: -1765136650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_75
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 65
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01975d27dd4494d48a169ec5238a2f2b
+      internalID: 1310320703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_78
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 65
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4961a4592a3c72f4580ef49f4b53e59b
+      internalID: 1952105051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 38
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837abcf83a2f72542ac5217adb29b524
+      internalID: -163110076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_81
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 38
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8045d06e1dd74a48b1f9912b1c5399c
+      internalID: 450072506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbd62fcd5f0a9542a09916b2f100f5f
+      internalID: -2124475723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Temple Angkor map object_83
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 8
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd671411c0495ec43a94046638dd5dfc
+      internalID: -356018140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Temple Angkor map object_0: -1337892765
+      Temple Angkor map object_1: -842494804
+      Temple Angkor map object_10: -452869496
+      Temple Angkor map object_11: -1481169196
+      Temple Angkor map object_12: -1014612862
+      Temple Angkor map object_13: 2099442972
+      Temple Angkor map object_14: -889251852
+      Temple Angkor map object_15: 1831004003
+      Temple Angkor map object_16: 1858537263
+      Temple Angkor map object_17: -465677811
+      Temple Angkor map object_18: -2040368266
+      Temple Angkor map object_19: 663348134
+      Temple Angkor map object_2: 1991148306
+      Temple Angkor map object_20: 824462321
+      Temple Angkor map object_21: 1180913555
+      Temple Angkor map object_22: -1308230571
+      Temple Angkor map object_23: -1729921503
+      Temple Angkor map object_24: -1692412351
+      Temple Angkor map object_25: 320500134
+      Temple Angkor map object_26: 216230263
+      Temple Angkor map object_27: 434174486
+      Temple Angkor map object_28: -1198643058
+      Temple Angkor map object_29: 2070385616
+      Temple Angkor map object_3: 660626793
+      Temple Angkor map object_30: -1339527966
+      Temple Angkor map object_31: -453229295
+      Temple Angkor map object_32: 673412703
+      Temple Angkor map object_33: 1246136990
+      Temple Angkor map object_34: 1634405667
+      Temple Angkor map object_35: -148916692
+      Temple Angkor map object_36: -280470071
+      Temple Angkor map object_37: 269578497
+      Temple Angkor map object_38: 2090468107
+      Temple Angkor map object_39: -1462673732
+      Temple Angkor map object_4: 16055988
+      Temple Angkor map object_40: 2139047251
+      Temple Angkor map object_41: 87318301
+      Temple Angkor map object_42: 94190546
+      Temple Angkor map object_43: 1825337044
+      Temple Angkor map object_44: -900723091
+      Temple Angkor map object_45: -1114996251
+      Temple Angkor map object_46: -1114504692
+      Temple Angkor map object_47: 286581554
+      Temple Angkor map object_48: 899583869
+      Temple Angkor map object_49: 1833179554
+      Temple Angkor map object_5: 1504029678
+      Temple Angkor map object_50: 1962536725
+      Temple Angkor map object_51: 349192019
+      Temple Angkor map object_52: -624685760
+      Temple Angkor map object_53: -967644001
+      Temple Angkor map object_54: -1668327737
+      Temple Angkor map object_55: -1373888016
+      Temple Angkor map object_56: -1494569276
+      Temple Angkor map object_57: -752982648
+      Temple Angkor map object_58: -245444193
+      Temple Angkor map object_59: -1586364983
+      Temple Angkor map object_6: -1188408268
+      Temple Angkor map object_60: 947766719
+      Temple Angkor map object_61: -1986526477
+      Temple Angkor map object_62: 639649898
+      Temple Angkor map object_63: 285911911
+      Temple Angkor map object_64: 67605078
+      Temple Angkor map object_65: -157252338
+      Temple Angkor map object_66: 131391034
+      Temple Angkor map object_67: 241600414
+      Temple Angkor map object_68: 875800595
+      Temple Angkor map object_69: -1344748906
+      Temple Angkor map object_7: 1953453365
+      Temple Angkor map object_70: -165649981
+      Temple Angkor map object_71: -2129658254
+      Temple Angkor map object_72: -1765136650
+      Temple Angkor map object_73: 1660052101
+      Temple Angkor map object_74: 1678776489
+      Temple Angkor map object_75: 1310320703
+      Temple Angkor map object_76: -1306453944
+      Temple Angkor map object_77: 1922545675
+      Temple Angkor map object_78: 1952105051
+      Temple Angkor map object_79: 1054191518
+      Temple Angkor map object_8: 964511345
+      Temple Angkor map object_80: -163110076
+      Temple Angkor map object_81: 450072506
+      Temple Angkor map object_82: -2124475723
+      Temple Angkor map object_83: -356018140
+      Temple Angkor map object_9: -1417748494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

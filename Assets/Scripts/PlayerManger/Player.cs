@@ -106,20 +106,27 @@ public class Player : MonoBehaviour
             rig.gravityScale = 4f;
         }
     }
-/*    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Slime")) //Va chạm
+        if (collision.gameObject.CompareTag("XoayTrap") || collision.gameObject.CompareTag("Enemy"))
         {
-                Debug.Log("Kich hoat anim");
-                //anim.SetBool("PlayerHit", true);
+            FindObjectOfType<GameSession>().PlayerDeath();
         }
     }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Slime")) //Huỷ va chạm
-        {
-                Debug.Log("Huy anim");
-                //anim.SetBool("PlayerHit", false);
+            /*    private void OnCollisionEnter2D(Collision2D collision)
+                {
+                    if (collision.gameObject.CompareTag("Slime")) //Va chạm
+                    {
+                            Debug.Log("Kich hoat anim");
+                            //anim.SetBool("PlayerHit", true);
+                    }
+                }
+                private void OnCollisionExit2D(Collision2D collision)
+                {
+                    if (collision.gameObject.CompareTag("Slime")) //Huỷ va chạm
+                    {
+                            Debug.Log("Huy anim");
+                            //anim.SetBool("PlayerHit", false);
+                    }
+                }*/
         }
-    }*/
-}
