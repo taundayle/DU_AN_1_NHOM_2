@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 5352385740847447117}
   - component: {fileID: 5372101593560545671}
   - component: {fileID: 4375637257310638249}
-  m_Layer: 6
+  - component: {fileID: 389695945730295611}
+  m_Layer: 0
   m_Name: AttackArea
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 548785107768131510}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19, y: -0.96, z: 0}
+  m_LocalPosition: {x: 1.09, y: -0.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -77,9 +78,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.9304623, y: 1.0248244}
-      - {x: 0.49281836, y: -0.27139187}
-      - {x: 1.8958117, y: -0.76647145}
+    - - {x: -0.10102135, y: 0.99448663}
+      - {x: -0.5083275, y: -0.3725176}
+      - {x: 0.9047786, y: -0.61478263}
   m_UseDelaunayMesh: 0
 --- !u!114 &4375637257310638249
 MonoBehaviour:
@@ -93,3 +94,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5762e1e81540ba442a9ded47a7bb3e91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 0
+--- !u!50 &389695945730295611
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548785107768131510}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

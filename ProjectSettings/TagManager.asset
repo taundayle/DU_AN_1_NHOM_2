@@ -7,6 +7,9 @@ TagManager:
   - Slime
   - Ground
   - Ladder
+  - Bullet
+  - Ulti
+  - Attack
   layers:
   - Default
   - TransparentFX
@@ -58,4 +61,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1785139069
+    locked: 0
+  - name: Baner
+    uniqueID: 2707647739
     locked: 0

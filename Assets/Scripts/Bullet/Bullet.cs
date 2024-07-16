@@ -37,17 +37,18 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.CompareTag("Ladder") || collision.CompareTag("Ground") || collision.CompareTag("Coin") || collision.CompareTag("Bee"))
+        if (collider.GetComponent<Health>() != null)
         {
-            isBullet = false;
+            Health health = collider.GetComponent<Health>();
+            health.TakeLife(2);
         }
-        if (collision.CompareTag("Player"))
-        {
-            FindObjectOfType<GameSession>().AddBullet(1);
-            FindObjectOfType<Gun>().AddBullet(1);
-            Destroy(gameObject);
-        }
+        //if (collision.CompareTag("Player"))
+        //{
+        //    FindObjectOfType<GameSession>().AddBullet(1);
+        //    FindObjectOfType<Gun>().AddBullet(1);
+        //    Destroy(gameObject);
+        //}
     }
 }
