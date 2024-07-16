@@ -2437,7 +2437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicAudioSource: {fileID: 1256384769}
   vfxaudioClip: {fileID: 131760559}
-  musicClip: {fileID: 0}
+  musicClip: {fileID: 8300000, guid: 5c15a26c36736a040b1eab17b6c766a2, type: 3}
   musicClip2: {fileID: 0}
   winClip: {fileID: 0}
 --- !u!1001 &808073151
