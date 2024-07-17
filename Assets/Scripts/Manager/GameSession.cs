@@ -9,17 +9,20 @@ using UnityEngine.UI;
 public class GameSession : MonoBehaviour
 {
     public int playerlives = 3;
+    public int shell = 0;
     public int score = 0;
     public int bullet = 0;
     public TMPro.TextMeshProUGUI scoreText;
     public TMPro.TextMeshProUGUI bulletText;
     public Slider liveSlider;
+    public Slider liveSliderhe;
     public GameObject gameOverUI; // Thêm biến tham chiếu đến UI "You Lose"
 
     private void Start()
     {
         scoreText.text = score.ToString();
         liveSlider.value = playerlives;
+        liveSliderhe.value = shell;
     }
 
     private void Update()
@@ -42,16 +45,29 @@ public class GameSession : MonoBehaviour
 
     public void PlayerDeath()
     {
-        if (playerlives > 0)
+        if (shell > 0)
         {
-            TakeLife(1);
+            TakeShell(1);
         }
         else
         {
-            GameOver(); // Gọi phương thức GameOver ngay khi hết mạng
+            if (playerlives > 0)
+            {
+                TakeLife(1);
+            }
+            else
+            {
+                GameOver(); // Gọi phương thức GameOver ngay khi hết mạng
+            }
         }
     }
 
+    //đoạt giáp
+    public void TakeShell(int num)
+    {
+        shell -= num; // giảm mạng
+        liveSliderhe.value = shell;
+    }
     //đoạt mạng
     public void TakeLife(int num)
     {
@@ -91,7 +107,15 @@ public class GameSession : MonoBehaviour
         bulletText.text = bullet.ToString();
     }
 
-    public void AddHealth(int num)
+    public void AddShell(int num) //Thêm giáp
+    {
+        if (shell < 5)
+        {
+            shell += num;
+            liveSliderhe.value = shell;
+        }
+    }
+    public void AddHealth(int num) //thêm máu
     {
         if (playerlives < 5)
         {
