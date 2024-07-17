@@ -97,6 +97,10 @@ public class Player : MonoBehaviour
             isClimbing = true;
             rig.gravityScale = 0f;
         }
+        if (collision.CompareTag("Gai,Axit"))
+        {
+            FindAnyObjectByType<GameSession>().PlayerDeath();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
