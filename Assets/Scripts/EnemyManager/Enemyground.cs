@@ -14,6 +14,7 @@ public class Enemyground : MonoBehaviour
 
     public Animator enemy2;
     public Animator enemy3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +51,6 @@ public class Enemyground : MonoBehaviour
     {
         Run();
         Flip();
-        
     }
     private void OnTriggerStay2D(Collider2D other1)
     {
@@ -58,8 +58,12 @@ public class Enemyground : MonoBehaviour
         {
             speed = 0f;
             timer += Time.deltaTime; // Tăng biến đếm thời gian
-            enemy2.SetBool("AttackP", true);
-            enemy3.SetBool("AttackP1", true);
+
+            if (enemy2 != null)
+                enemy2.SetBool("AttackP", true);
+
+            if (enemy3 != null)
+                enemy3.SetBool("AttackP1", true);
 
             if (timer >= cooldown)
             {
@@ -73,8 +77,12 @@ public class Enemyground : MonoBehaviour
         if (other2.CompareTag("Player"))
         {
             speed = 5.5f;
-            enemy2.SetBool("AttackP", false);
-            enemy3.SetBool("AttackP1", false);
+
+            if (enemy2 != null)
+                enemy2.SetBool("AttackP", false);
+
+            if (enemy3 != null)
+                enemy3.SetBool("AttackP1", false);
         }
     }
 }

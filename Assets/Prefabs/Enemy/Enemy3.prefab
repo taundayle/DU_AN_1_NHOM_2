@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e0402fdf4a6a94fa5ac0c42beb806e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: 7
-  end: 38
+  start: 0
+  end: 0
   speed: 5.5
-  enemy2: {fileID: 0}
+  enemy2: {fileID: 2828250801898971409, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
   enemy3: {fileID: 5149507557365411070}
 --- !u!114 &5896165158304492997
 MonoBehaviour:

@@ -101,11 +101,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e0402fdf4a6a94fa5ac0c42beb806e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: 6
-  end: 13
+  start: 0
+  end: 0
   speed: 5.5
   enemy2: {fileID: 2828250801898971409}
-  enemy3: {fileID: 0}
+  enemy3: {fileID: 5149507557365411070, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
 --- !u!95 &2828250801898971409
 Animator:
   serializedVersion: 5
