@@ -7,6 +7,10 @@ public class Chest : MonoBehaviour
     [SerializeField] Transform spawn1;
     [SerializeField] Transform spawn2;
     [SerializeField] Transform spawn3;
+    [SerializeField] Transform spawncoin;
+    [Header("Coin")]
+    public GameObject coinprefabs;
+    [Header("SpawnPrefabs")]
     public GameObject spawn1prefabs;
     public GameObject spawn2prefabs;
     public GameObject spawn3prefabs;
@@ -20,10 +24,15 @@ public class Chest : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Attack"))
         {
-            anim.SetBool("Hit", true);
+
             timer += Time.deltaTime;
-            
-            if (timer >= 0.04)
+            anim.SetBool("Hit", true);
+            if (timer > 0.02 && timer < 0.04)
+            {
+                anim.SetBool("Hit2", true);
+                Instantiate(coinprefabs, spawncoin.position, transform.rotation);
+            }
+            else if (timer >= 0.04)
             {
                 Destroy(gameObject);
                 Instantiate(spawn1prefabs, spawn1.position, transform.rotation);
