@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 786690276322708053}
   m_Layer: 0
-  m_Name: Enemy_Flying_1
+  m_Name: Bat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e8e752a93e6ae4aa2e6c685db509aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 2
 --- !u!58 &7949085033906152785
 CircleCollider2D:
   m_ObjectHideFlags: 0

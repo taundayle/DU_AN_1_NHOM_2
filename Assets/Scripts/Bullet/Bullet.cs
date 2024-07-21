@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public int damage;
     public float speedbullet;
     private Rigidbody2D Bullett;
     private Transform player; //Tham chiếu tới player
@@ -42,7 +43,7 @@ public class Bullet : MonoBehaviour
         if (collider.GetComponent<Health>() != null)
         {
             Health health = collider.GetComponent<Health>();
-            health.TakeLife(2);
+            health.TakeLife(damage);
         }
         //if (collision.CompareTag("Player"))
         //{

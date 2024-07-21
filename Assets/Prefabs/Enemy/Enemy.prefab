@@ -53,6 +53,7 @@ MonoBehaviour:
   end: 36.36
   speed: 5
   enemy2: {fileID: 0}
+  enemy3: {fileID: 0}
 --- !u!212 &5885978238553093942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -117,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e8e752a93e6ae4aa2e6c685db509aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 5
 --- !u!50 &5486005641363429064
 Rigidbody2D:
   serializedVersion: 4
