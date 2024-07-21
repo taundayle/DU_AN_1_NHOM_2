@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 977458677993677672}
   - component: {fileID: 7952814718038121298}
   - component: {fileID: 2394468334236553199}
+  - component: {fileID: 3870499825037129457}
   m_Layer: 0
   m_Name: Thunders
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 298913296, guid: e39af45fbf062e94381579fe2c3ce4a7, type: 3}
+  m_Sprite: {fileID: -651210436, guid: 38d846915ba750745b6faff078af80a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -134,7 +135,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.53, y: 1.7702287}
+    oldSize: {x: 2, y: 2.4}
     newSize: {x: 1.53, y: 1.7702287}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -143,3 +144,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.53, y: 1.7702287}
   m_EdgeRadius: 0
+--- !u!95 &3870499825037129457
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264507799081928050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 378b0e6d40db4324a8e4d6372a53201c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

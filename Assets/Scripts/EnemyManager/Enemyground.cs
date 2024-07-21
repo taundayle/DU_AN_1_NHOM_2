@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +8,13 @@ public class Enemyground : MonoBehaviour
     Rigidbody2D rig;
     int isRight = 1;
     GameObject player;
+
+    private float timer = 0f;
+    private float cooldown = 0.67f;
+
+    public Animator enemy2;
+    public Animator enemy3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +51,38 @@ public class Enemyground : MonoBehaviour
     {
         Run();
         Flip();
-        
     }
+    private void OnTriggerStay2D(Collider2D other1)
+    {
+        if (other1.CompareTag("Player"))
+        {
+            speed = 0f;
+            timer += Time.deltaTime; // Tăng biến đếm thời gian
 
+            if (enemy2 != null)
+                enemy2.SetBool("AttackP", true);
+
+            if (enemy3 != null)
+                enemy3.SetBool("AttackP1", true);
+
+            if (timer >= cooldown)
+            {
+                timer = 0f; // Đặt lại biến đếm thời gian
+                FindAnyObjectByType<GameSession>().PlayerDeath(); // Gọi phương thức PlayerDeath
+            }
+        }
+    }
+    private void OnTriggerExit2D(Collider2D other2)
+    {
+        if (other2.CompareTag("Player"))
+        {
+            speed = 5.5f;
+
+            if (enemy2 != null)
+                enemy2.SetBool("AttackP", false);
+
+            if (enemy3 != null)
+                enemy3.SetBool("AttackP1", false);
+        }
+    }
 }

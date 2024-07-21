@@ -97,6 +97,10 @@ public class Player : MonoBehaviour
             isClimbing = true;
             rig.gravityScale = 0f;
         }
+        if (collision.CompareTag("Gai,Axit"))
+        {
+            FindAnyObjectByType<GameSession>().PlayerDeath();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -113,20 +117,20 @@ public class Player : MonoBehaviour
             FindObjectOfType<GameSession>().PlayerDeath();
         }
     }
-            /*    private void OnCollisionEnter2D(Collision2D collision)
-                {
-                    if (collision.gameObject.CompareTag("Slime")) //Va chạm
-                    {
-                            Debug.Log("Kich hoat anim");
-                            //anim.SetBool("PlayerHit", true);
-                    }
-                }
-                private void OnCollisionExit2D(Collision2D collision)
-                {
-                    if (collision.gameObject.CompareTag("Slime")) //Huỷ va chạm
-                    {
-                            Debug.Log("Huy anim");
-                            //anim.SetBool("PlayerHit", false);
-                    }
-                }*/
+    /*    private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("Slime")) //Va chạm
+            {
+                    Debug.Log("Kich hoat anim");
+                    //anim.SetBool("PlayerHit", true);
+            }
         }
+        private void OnCollisionExit2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("Slime")) //Huỷ va chạm
+            {
+                    Debug.Log("Huy anim");
+                    //anim.SetBool("PlayerHit", false);
+            }
+        }*/
+}
