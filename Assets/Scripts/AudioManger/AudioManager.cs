@@ -1,19 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource musicAudioSource;
-    public AudioSource vfxaudioClip;
+    [Header("---------- Audio Source---------")]
+    [SerializeField] AudioSource musicSource;
+    [SerializeField] AudioSource SFXsource;
 
-    public AudioClip musicClip;
-    public AudioClip musicClip2;
-    public AudioClip winClip;
-    // Start is called before the first frame update
-    void Start()
+
+
+    [Header("---------- Audio Source---------")]
+    public AudioClip background;
+    public AudioClip death;
+    private void Start()
     {
-        musicAudioSource.clip = musicClip;
-        musicAudioSource.Play();
+        musicSource.clip = background;
+        musicSource.Play();
+    }
+    public void PlaySFX(AudioClip clip)
+    {
+        SFXsource.PlayOneShot(clip);
     }
 }

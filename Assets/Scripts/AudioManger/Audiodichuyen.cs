@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 public class Audiodichuyen : MonoBehaviour
 {
+    GameSession gss;
     Player player;
     MoveInput input;
     Player_Attack attackPlayer;
@@ -14,13 +15,16 @@ public class Audiodichuyen : MonoBehaviour
     private bool isWalking = false;
     private bool isJumping = false;
     private bool isShooting = false;
+    private bool isoofing = false;
 
     [SerializeField] AudioClip jumpsound;
     [SerializeField] AudioClip walksound;
     [SerializeField] AudioClip Shootsound;
+    [SerializeField] AudioClip oofsound; //bi danh
     private AudioSource jumpsoundSource;
     private AudioSource walksoundSource;
     private AudioSource shootsoundSource;
+    private AudioSource oofsoundSource;
 
     void Start()
     {
@@ -30,6 +34,7 @@ public class Audiodichuyen : MonoBehaviour
         jumpsoundSource = GetComponent<AudioSource>();
         walksoundSource = GetComponent<AudioSource>();
         shootsoundSource = GetComponent<AudioSource>();
+        oofsoundSource = GetComponent<AudioSource>();
     }
 
     private AudioClip GetJumpsound()
@@ -44,6 +49,10 @@ public class Audiodichuyen : MonoBehaviour
     {
         return Shootsound;
     }
+    private AudioClip GetOofsound()
+    {
+        return oofsound;
+    }
 
     // Update is called once per frame
     void Update()
@@ -52,6 +61,7 @@ public class Audiodichuyen : MonoBehaviour
         Jump();
         Walk();
         Shoot();
+        Oofsound();
 
     }
     void Jump()
@@ -78,7 +88,7 @@ public class Audiodichuyen : MonoBehaviour
     {
         float gameInput = input.HorizontalInput;
 
-        if (gameInput > Mathf.Epsilon && player.isGrounded)
+        if (gameInput > Mathf.Epsilon || gameInput < Mathf.Epsilon && player.isGrounded)
         {
             if (!isWalking)
             {
@@ -118,5 +128,9 @@ public class Audiodichuyen : MonoBehaviour
             isShooting = false; // Đánh dấu là không còn phát âm thanh nữa
             //}
         }
+    }
+    void Oofsound()
+    {
+        
     }
 }
