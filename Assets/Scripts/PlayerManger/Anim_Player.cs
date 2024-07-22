@@ -18,20 +18,6 @@ public class Anim_Player : MonoBehaviour
         pl = GetComponent<Player>();
         gameInput = GetComponent<MoveInput>();
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (pl.gameObject.CompareTag("Enemy") || pl.gameObject.CompareTag("Gai,Axit") || pl.gameObject.CompareTag("XoayTrap"))
-        {
-            anim.SetBool("HitPlayer", true);
-        }
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (pl.gameObject.CompareTag("Enemy") || pl.gameObject.CompareTag("Gai,Axit") || pl.gameObject.CompareTag("XoayTrap"))
-        {
-            anim.SetBool("HitPlayer", false);
-        }
-    }
 
     // Update is called once per frame
     void Update()
