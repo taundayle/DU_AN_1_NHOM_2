@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-    private int damage = 2;
+    public int damage = 1;
     public float timer;
     private void Update()
     {
