@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+
+    Animator anim;
     private MoveInput gameInput;
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
@@ -25,6 +27,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponent<Animator>();
         gameInput = GetComponent<MoveInput>();
         rig = GetComponent<Rigidbody2D>();
     }
@@ -97,9 +100,10 @@ public class Player : MonoBehaviour
             isClimbing = true;
             rig.gravityScale = 0f;
         }
-        if (collision.CompareTag("Gai,Axit"))
+        if (collision.CompareTag("Gai,Axit") || collision.gameObject.CompareTag("XoayTrap") || collision.gameObject.CompareTag("Enemy"))
         {
             FindAnyObjectByType<GameSession>().PlayerDeath();
+            anim.SetBool("HitPlayer", true);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -109,14 +113,18 @@ public class Player : MonoBehaviour
             isClimbing = false;
             rig.gravityScale = 4f;
         }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("XoayTrap") || collision.gameObject.CompareTag("Enemy"))
+        if (collision.CompareTag("Gai,Axit") || collision.gameObject.CompareTag("XoayTrap") || collision.gameObject.CompareTag("Enemy"))
         {
-            FindObjectOfType<GameSession>().PlayerDeath();
+            anim.SetBool("HitPlayer", false);
         }
     }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("XoayTrap") || collision.gameObject.CompareTag("Enemy"))
+    //    {
+    //        FindObjectOfType<GameSession>().PlayerDeath();
+    //    }
+    //}
     /*    private void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject.CompareTag("Slime")) //Va chạm

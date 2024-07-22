@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7444de8c79dfef4490ca5db6048059b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 4
   speedbullet: 5
 --- !u!95 &1800381209840899248
 Animator:

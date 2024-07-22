@@ -8,15 +8,29 @@ public class Anim_Player : MonoBehaviour
     private Player pl;
     private MoveInput gameInput;
     Animator anim;
-    private bool ban;
-    private bool chem;
-    private bool ulti;
+    public bool ban;
+    public bool chem;
+    public bool ulti;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         pl = GetComponent<Player>();
         gameInput = GetComponent<MoveInput>();
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (pl.gameObject.CompareTag("Enemy") || pl.gameObject.CompareTag("Gai,Axit") || pl.gameObject.CompareTag("XoayTrap"))
+        {
+            anim.SetBool("HitPlayer", true);
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (pl.gameObject.CompareTag("Enemy") || pl.gameObject.CompareTag("Gai,Axit") || pl.gameObject.CompareTag("XoayTrap"))
+        {
+            anim.SetBool("HitPlayer", false);
+        }
     }
 
     // Update is called once per frame

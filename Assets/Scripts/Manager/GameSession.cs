@@ -8,6 +8,15 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
+    // Âm thanh và animation nhân vật bị đánh
+    [SerializeField] AudioClip oofsound;
+    private AudioSource oofsoundSource; //bị đánh
+    private AudioClip GetOofsound()
+    {
+        return oofsound;
+    }
+    //
+
     public int playerlives = 3;
     public int shell = 0;
     public int score = 0;
@@ -17,9 +26,13 @@ public class GameSession : MonoBehaviour
     public Slider liveSlider;
     public Slider liveSliderhe;
     public GameObject gameOverUI; // Thêm biến tham chiếu đến UI "You Lose"
+    [SerializeField] bool takedamage = false;
 
     private void Start()
     {
+        oofsoundSource = GetComponent<AudioSource>(); //âm thanh
+
+
         scoreText.text = score.ToString();
         liveSlider.value = playerlives;
         liveSliderhe.value = shell;
@@ -42,18 +55,34 @@ public class GameSession : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+    public void Anim_playerdeath()
+    {
+        if (takedamage == true)
+        {
+            oofsoundSource.PlayOneShot(oofsound);
+            takedamage = false;
+        }
+        else
+        {
+            oofsoundSource.Stop();
+        }
+    }
 
     public void PlayerDeath()
     {
         if (shell > 0)
         {
             TakeShell(1);
+            takedamage = true;
+            Anim_playerdeath();
         }
         else
         {
             if (playerlives > 0)
             {
                 TakeLife(1);
+                takedamage = true;
+                Anim_playerdeath();
             }
             else
             {
@@ -67,6 +96,7 @@ public class GameSession : MonoBehaviour
     {
         shell -= num; // giảm mạng
         liveSliderhe.value = shell;
+        takedamage = false;
     }
     //đoạt mạng
     public void TakeLife(int num)
@@ -78,6 +108,7 @@ public class GameSession : MonoBehaviour
         {
             GameOver(); // Đảm bảo gọi GameOver khi mạng về 0
         }
+        takedamage = false;
     }
 
     public void GameOver()

@@ -1,33 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.EventSystems;
 
 public class Audiodichuyen : MonoBehaviour
 {
-    GameSession gss;
+    Anim_Player anim;
     Player player;
     MoveInput input;
     Player_Attack attackPlayer;
 
+    private bool attack = false;
+    private bool shoot = false;
+    private bool ulti = false;
     private bool isWalking = false;
     private bool isJumping = false;
-    private bool isShooting = false;
-    private bool isoofing = false;
+    //private bool isShooting = false;
+    //private bool isoofing = false;
 
     [SerializeField] AudioClip jumpsound;
     [SerializeField] AudioClip walksound;
-    [SerializeField] AudioClip Shootsound;
-    [SerializeField] AudioClip oofsound; //bi danh
-    private AudioSource jumpsoundSource;
-    private AudioSource walksoundSource;
-    private AudioSource shootsoundSource;
-    private AudioSource oofsoundSource;
+    [SerializeField] AudioClip shootsound;
+    [SerializeField] AudioClip ultisound;
+    [SerializeField] AudioClip oofsound;
+    [SerializeField] AudioClip chemsound;
+    private AudioSource jumpsoundSource;  //nhảy
+    private AudioSource walksoundSource; //walk
+    private AudioSource shootsoundSource; //bắn chiêu 2
+    private AudioSource ultisoundSource; //chiêu cuối
+    private AudioSource oofsoundSource; //bị đánh
+    private AudioSource chemsoundSource;
 
     void Start()
     {
+        anim = GetComponent<Anim_Player>();
         player = GetComponent<Player>();
         input = GetComponent<MoveInput>();
         attackPlayer = GetComponent<Player_Attack>();
@@ -35,8 +44,17 @@ public class Audiodichuyen : MonoBehaviour
         walksoundSource = GetComponent<AudioSource>();
         shootsoundSource = GetComponent<AudioSource>();
         oofsoundSource = GetComponent<AudioSource>();
+        ultisoundSource = GetComponent<AudioSource>();
+        chemsoundSource = GetComponent<AudioSource>();
     }
-
+    private AudioClip ChemSound()
+    {
+        return chemsound;
+    }
+    private AudioClip Ultisound()
+    {
+        return ultisound;
+    }
     private AudioClip GetJumpsound()
     {
         return jumpsound;
@@ -47,7 +65,7 @@ public class Audiodichuyen : MonoBehaviour
     }
     private AudioClip GetShootsound()
     {
-        return Shootsound;
+        return shootsound;
     }
     private AudioClip GetOofsound()
     {
@@ -61,9 +79,60 @@ public class Audiodichuyen : MonoBehaviour
         Jump();
         Walk();
         Shoot();
-        Oofsound();
+        Change();
+        //Oofing();
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            attack = true;
+        }
+        else if (Input.GetKey(KeyCode.Alpha2))
+        {
+            shoot = true;
+        }
+        else if (Input.GetKey(KeyCode.Alpha3))
+        {
+            ulti = true;
+        }
+        else
+        {
+            attack = false;
+            shoot = false;
+            ulti = false;
+        }
 
     }
+    void Change()
+    {
+        if (attack == true)
+        {
+            chemsoundSource.PlayOneShot(chemsound);
+            attack = false;
+        }
+        if (shoot == true)
+        {
+            shootsoundSource.PlayOneShot(shootsound);
+            shoot = false;
+        }
+        if (ulti == true)
+        {
+            ultisoundSource.PlayOneShot(ultisound);
+            shoot = false;
+        }
+
+    }
+/*    void Oofing()
+    {
+        if (gss.takedamage == true)
+        {
+            oofsoundSource.PlayOneShot(oofsound);
+            //isoofing = true;
+        }
+        else
+        {
+            oofsoundSource.Stop();
+            //isoofing = false;
+        }
+    }*/
     void Jump()
     {
         if (player.isGrounded == true)
@@ -86,16 +155,14 @@ public class Audiodichuyen : MonoBehaviour
     }
     void Walk()
     {
-        float gameInput = input.HorizontalInput;
-
-        if (gameInput > Mathf.Epsilon || gameInput < Mathf.Epsilon && player.isGrounded)
+        float moveInput = input.HorizontalInput;
+        if (moveInput > 0 && player.isGrounded || moveInput < 0 && player.isGrounded)
         {
             if (!isWalking)
             {
 
                 walksoundSource.PlayOneShot(walksound);
                 isWalking = true; // Đánh dấu là đang phát âm thanh
-
             }
 
         }
@@ -109,28 +176,37 @@ public class Audiodichuyen : MonoBehaviour
         }
     }
 
+    
     void Shoot()
     {
-        if (/*attackPlayer.ShootInput == true && attackPlayer.canShoot  */Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.J))
+        if (anim.chem == true && Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.J))
         {
             // Kiểm tra xem âm thanh đã được phát chưa
             //if (!isShooting)
             //{
-            shootsoundSource.PlayOneShot(Shootsound);
-            isShooting = true; // Đánh dấu là đang phát âm thanh
+            chemsoundSource.PlayOneShot(chemsound);
+            //isShooting = true; // Đánh dấu là đang phát âm thanh
             //}
         }
-        else if (Input.GetMouseButton(0) || Input.GetKey(KeyCode.J))
+        else if (anim.ban == true && Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.J))
         {
             //if (isShooting)
             //{
-            shootsoundSource.Stop();
-            isShooting = false; // Đánh dấu là không còn phát âm thanh nữa
+            shootsoundSource.PlayOneShot(shootsound);
+            //isShooting = true; // Đánh dấu là không còn phát âm thanh nữa
             //}
         }
-    }
-    void Oofsound()
-    {
-        
+        else if (anim.ulti == true && Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.J))
+        {
+            ultisoundSource.PlayOneShot(ultisound);
+            //isShooting = true;
+        }
+        else if(Input.GetMouseButton(0) || Input.GetKey(KeyCode.J))
+        {
+            chemsoundSource.Stop();
+            ultisoundSource.Stop();
+            shootsoundSource.Stop();
+            //isShooting= false;
+        }
     }
 }
