@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6807762834240745013}
   - component: {fileID: 8704339478290372312}
   m_Layer: 0
-  m_Name: Enemy3
+  m_Name: Octopus
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -172,9 +172,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07923317, y: 0}
+  m_Offset: {x: 0.07923317, y: -0.37932423}
   serializedVersion: 2
-  m_Radius: 0.82164955
+  m_Radius: 1.2009737
 --- !u!70 &8704339478290372312
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
