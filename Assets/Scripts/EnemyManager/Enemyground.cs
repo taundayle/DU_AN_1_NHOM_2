@@ -10,7 +10,7 @@ public class Enemyground : MonoBehaviour
     GameObject player;
 
     private float timer = 0f;
-    private float cooldown = 0.67f;
+    private float cooldown = 1.2f;
 
     public Animator enemy2;
     public Animator enemy3;
