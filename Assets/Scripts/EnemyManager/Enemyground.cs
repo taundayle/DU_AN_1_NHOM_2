@@ -12,6 +12,10 @@ public class Enemyground : MonoBehaviour
     private float timer = 0f;
     private float cooldown = 1.2f;
 
+    public Vector3 attackAreaOffSet;
+    public float attackRange = 1f;
+    public LayerMask attackMaskPlayer;
+
     public Animator enemy2;
     public Animator enemy3;
 
@@ -66,7 +70,6 @@ public class Enemyground : MonoBehaviour
                 if (enemy3 != null)
                     enemy3.SetBool("AttackP1", true);
                 timer = 0f; // Đặt lại biến đếm thời gian
-                FindAnyObjectByType<GameSession>().PlayerDeath(); // Gọi phương thức PlayerDeath
             }
         }
     }
@@ -81,5 +84,25 @@ public class Enemyground : MonoBehaviour
             if (enemy3 != null)
                 enemy3.SetBool("AttackP1", false);
         }
+    }
+    public void AttackPlayer()
+    {
+        Vector3 pos = transform.position;
+        pos += transform.right * attackAreaOffSet.x;
+        pos += transform.up * attackAreaOffSet.y;
+
+        Collider2D collBoss = Physics2D.OverlapCircle(pos, attackRange, attackMaskPlayer);
+        if (collBoss != null)
+        {
+            FindAnyObjectByType<GameSession>().PlayerDeath();
+        }
+    }
+    void OnDrawGizmosSelected()
+    {
+        Vector3 pos = transform.position;
+        pos += transform.right * attackAreaOffSet.x;
+        pos += transform.up * attackAreaOffSet.y;
+
+        Gizmos.DrawWireSphere(pos, attackRange);
     }
 }

@@ -551,6 +551,26 @@ PrefabInstance:
       propertyPath: start
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackRange
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackAreaOffSet.x
+      value: 1.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackAreaOffSet.y
+      value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackAreaOffSet.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackMaskPlayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 5129392038723671709, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.15365
@@ -1026,6 +1046,22 @@ PrefabInstance:
     - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
       propertyPath: start
       value: -34.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: attackRange
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: attackAreaOffSet.x
+      value: 2.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: attackAreaOffSet.y
+      value: -1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: attackMaskPlayer.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 1911001103606779915, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2542,7 +2578,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.701948, y: -11.78427, z: -9.967569}
+  m_LocalPosition: {x: -42.58525, y: -49.76197, z: -9.967569}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3618,7 +3654,7 @@ Transform:
   m_GameObject: {fileID: 642604280}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.5433044, y: -0.85230255, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6009,6 +6045,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1218707121}
     m_Modifications:
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: end
+      value: 3.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: start
+      value: -4.94
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: attackRange
+      value: 1.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: attackAreaOffSet.x
+      value: 2.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: attackAreaOffSet.y
+      value: -1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 1129830493725680623, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
+      propertyPath: attackMaskPlayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 1911001103606779915, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.63
@@ -6361,6 +6421,22 @@ PrefabInstance:
     - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
       propertyPath: start
       value: -33.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackAreaOffSet.x
+      value: 2.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackAreaOffSet.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2181882626421507163, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
+      propertyPath: attackMaskPlayer.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 5129392038723671709, guid: 6fbd4e1e581326c47baef6f1a2069922, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23821,11 +23897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5326679199023348377, guid: 97a93672a1b37ab40b022d566e74c6b2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.4
+      value: -4.94
       objectReference: {fileID: 0}
     - target: {fileID: 5326679199023348377, guid: 97a93672a1b37ab40b022d566e74c6b2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13
+      value: -51.83
       objectReference: {fileID: 0}
     - target: {fileID: 5326679199023348377, guid: 97a93672a1b37ab40b022d566e74c6b2, type: 3}
       propertyPath: m_LocalPosition.z
