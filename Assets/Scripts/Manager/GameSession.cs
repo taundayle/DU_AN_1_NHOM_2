@@ -125,7 +125,7 @@ public class GameSession : MonoBehaviour
 
     public void AddBullet(int num)
     {
-        if (bullet < 10)
+        if (bullet < 20)
         {
             bullet += num;
             bulletText.text = bullet.ToString();
