@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5129392038723671709}
   - component: {fileID: 4468916195088854131}
-  - component: {fileID: 2181882626421507163}
+  - component: {fileID: 299184570931373240}
   - component: {fileID: 5896165158304492997}
   - component: {fileID: 5149507557365411070}
   - component: {fileID: 6807762834240745013}
@@ -30,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9197903712694409166}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -52.74, y: 18.73, z: -0.047231767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2181882626421507163
+--- !u!114 &299184570931373240
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -98,14 +98,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 9197903712694409166}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6e0402fdf4a6a94fa5ac0c42beb806e, type: 3}
+  m_Script: {fileID: 11500000, guid: a39ee58be2db2224b9aa1bbacd72a4f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   start: -33.1
   end: -26.1
   speed: 5.5
-  enemy2: {fileID: 2828250801898971409, guid: 13ed258881e0ddc409b0a28d04a82fae, type: 3}
-  enemy3: {fileID: 5149507557365411070}
+  timer: 0
+  cooldown: 0.65
 --- !u!114 &5896165158304492997
 MonoBehaviour:
   m_ObjectHideFlags: 0

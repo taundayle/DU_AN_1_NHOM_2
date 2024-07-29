@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemyground : MonoBehaviour
+public class EnemyOctopus : MonoBehaviour
 {
     [SerializeField] float start, end, speed;
     Rigidbody2D rig;
@@ -67,7 +67,7 @@ public class Enemyground : MonoBehaviour
             timer += Time.deltaTime; // Tăng biến đếm thời gian
 
             if (anim != null)
-                anim.SetBool("AttackP", true);
+                anim.SetBool("AttackP1", true);
             if (timer >= cooldown)
             {
                 FindAnyObjectByType<GameSession>().PlayerDeath(); // Gọi phương thức PlayerDeath
@@ -83,29 +83,29 @@ public class Enemyground : MonoBehaviour
             speed = 5.5f;
             if (anim != null)
             {
-                anim.SetBool("AttackP", false);
+                anim.SetBool("AttackP1", false);
                 timer = 0f;
             }
         }
     }
-/*    public void AttackPlayer()
-    {
-        Vector3 pos = transform.position;
-        pos += transform.right * attackAreaOffSet.x;
-        pos += transform.up * attackAreaOffSet.y;
-
-        Collider2D collBoss = Physics2D.OverlapCircle(pos, attackRange, attackMaskPlayer);
-        if (collBoss != null)
+    /*    public void AttackPlayer()
         {
-            FindAnyObjectByType<GameSession>().PlayerDeath();
-        }
-    }
-    void OnDrawGizmosSelected()
-    {
-        Vector3 pos = transform.position;
-        pos += transform.right * attackAreaOffSet.x;
-        pos += transform.up * attackAreaOffSet.y;
+            Vector3 pos = transform.position;
+            pos += transform.right * attackAreaOffSet.x;
+            pos += transform.up * attackAreaOffSet.y;
 
-        Gizmos.DrawWireSphere(pos, attackRange);
-    }*/
+            Collider2D collBoss = Physics2D.OverlapCircle(pos, attackRange, attackMaskPlayer);
+            if (collBoss != null)
+            {
+                FindAnyObjectByType<GameSession>().PlayerDeath();
+            }
+        }
+        void OnDrawGizmosSelected()
+        {
+            Vector3 pos = transform.position;
+            pos += transform.right * attackAreaOffSet.x;
+            pos += transform.up * attackAreaOffSet.y;
+
+            Gizmos.DrawWireSphere(pos, attackRange);
+        }*/
 }

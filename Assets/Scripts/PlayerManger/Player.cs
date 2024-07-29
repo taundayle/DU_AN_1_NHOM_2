@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
     Animator anim;
     private MoveInput gameInput;
     public float moveSpeed = 5f;
