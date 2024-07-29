@@ -10,7 +10,11 @@ public class Enemyground : MonoBehaviour
     GameObject player;
 
     private float timer = 0f;
-    private float cooldown = 0.67f;
+    private float cooldown = 1.2f;
+
+    public Vector3 attackAreaOffSet;
+    public float attackRange = 1f;
+    public LayerMask attackMaskPlayer;
 
     public Animator enemy2;
     public Animator enemy3;
@@ -54,21 +58,18 @@ public class Enemyground : MonoBehaviour
     }
     private void OnTriggerStay2D(Collider2D other1)
     {
+        timer += Time.deltaTime; // Tăng biến đếm thời gian
         if (other1.CompareTag("Player"))
         {
             speed = 0f;
-            timer += Time.deltaTime; // Tăng biến đếm thời gian
-
-            if (enemy2 != null)
-                enemy2.SetBool("AttackP", true);
-
-            if (enemy3 != null)
-                enemy3.SetBool("AttackP1", true);
-
             if (timer >= cooldown)
             {
+                if (enemy2 != null)
+                    enemy2.SetBool("AttackP", true);
+
+                if (enemy3 != null)
+                    enemy3.SetBool("AttackP1", true);
                 timer = 0f; // Đặt lại biến đếm thời gian
-                FindAnyObjectByType<GameSession>().PlayerDeath(); // Gọi phương thức PlayerDeath
             }
         }
     }
@@ -77,12 +78,31 @@ public class Enemyground : MonoBehaviour
         if (other2.CompareTag("Player"))
         {
             speed = 5.5f;
-
             if (enemy2 != null)
                 enemy2.SetBool("AttackP", false);
 
             if (enemy3 != null)
                 enemy3.SetBool("AttackP1", false);
         }
+    }
+    public void AttackPlayer()
+    {
+        Vector3 pos = transform.position;
+        pos += transform.right * attackAreaOffSet.x;
+        pos += transform.up * attackAreaOffSet.y;
+
+        Collider2D collBoss = Physics2D.OverlapCircle(pos, attackRange, attackMaskPlayer);
+        if (collBoss != null)
+        {
+            FindAnyObjectByType<GameSession>().PlayerDeath();
+        }
+    }
+    void OnDrawGizmosSelected()
+    {
+        Vector3 pos = transform.position;
+        pos += transform.right * attackAreaOffSet.x;
+        pos += transform.up * attackAreaOffSet.y;
+
+        Gizmos.DrawWireSphere(pos, attackRange);
     }
 }
