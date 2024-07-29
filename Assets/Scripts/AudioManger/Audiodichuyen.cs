@@ -105,18 +105,27 @@ public class Audiodichuyen : MonoBehaviour
     {
         if (attack == true)
         {
-            chemsoundSource.PlayOneShot(chemsound);
+            chemsoundSource.clip = chemsound;
+            chemsoundSource.Play();
             attack = false;
         }
-        if (shoot == true)
+        else if (shoot == true)
         {
-            shootsoundSource.PlayOneShot(shootsound);
+            shootsoundSource.clip = shootsound;
+            shootsoundSource.Play();
             shoot = false;
         }
-        if (ulti == true)
+        else if (ulti == true)
         {
-            ultisoundSource.PlayOneShot(ultisound);
+            ultisoundSource.clip = ultisound;
+            ultisoundSource.Play();
             shoot = false;
+        }
+        else
+        {
+            attack = false;
+            shoot = false;
+            ulti = false;
         }
 
     }
