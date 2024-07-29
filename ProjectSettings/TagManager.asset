@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - XoayTrap
   - Gai,Axit
+  - teleport
   layers:
   - Default
   - TransparentFX

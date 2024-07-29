@@ -27,7 +27,7 @@ public class Tele : MonoBehaviour
     }
     public void InputKey()
     {
-        if (Input.GetKeyDown(KeyCode.E)/* || Input.GetMouseButton(1)*/)
+        if (Input.GetKeyDown(KeyCode.R)/* || Input.GetMouseButton(1)*/)
         {
             if (CurentTeleporter != null)
             {
