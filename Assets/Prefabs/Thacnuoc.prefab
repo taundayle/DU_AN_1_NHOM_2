@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3547665073956369216}
   - component: {fileID: 1421131226351206889}
   - component: {fileID: 5332803628217923094}
-  - component: {fileID: 7584339475489310233}
+  - component: {fileID: -1702457654279410817}
   m_Layer: 0
   m_Name: Thacnuoc
   m_TagString: Untagged
@@ -143,8 +143,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!58 &7584339475489310233
-CircleCollider2D:
+--- !u!61 &-1702457654279410817
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -175,6 +175,16 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.8775444, y: 3.2036953}
+  m_Offset: {x: 15.932173, y: 2.4420595}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 18.277954
+  m_Size: {x: 45.049442, y: 14.527227}
+  m_EdgeRadius: 0

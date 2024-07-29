@@ -6,6 +6,7 @@ public class BulletCoin : MonoBehaviour
 {
     private Rigidbody2D Bullett;
     private bool isBullet = true;
+    public int bullet = 1;
     void Start()
     {
         Bullett = GetComponent<Rigidbody2D>();
@@ -25,8 +26,8 @@ public class BulletCoin : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            FindObjectOfType<GameSession>().AddBullet(1);
-            FindObjectOfType<Gun>().AddBullet(1);
+            FindObjectOfType<GameSession>().AddBullet(bullet);
+            FindObjectOfType<Gun>().AddBullet(bullet);
             Destroy(gameObject);
         }
     }
