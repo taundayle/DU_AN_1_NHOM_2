@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
             isClimbing = true;
             rig.gravityScale = 0f;
         }
-        if (collision.CompareTag("Gai,Axit") || collision.gameObject.CompareTag("XoayTrap") || collision.gameObject.CompareTag("Enemy"))
+        if (collision.CompareTag("Gai,Axit") || collision.gameObject.CompareTag("XoayTrap")/* || collision.gameObject.CompareTag("Enemy")*/)
         {
             FindAnyObjectByType<GameSession>().PlayerDeath();
             anim.SetBool("HitPlayer", true);
@@ -112,32 +112,27 @@ public class Player : MonoBehaviour
             isClimbing = false;
             rig.gravityScale = 4f;
         }
-        if (collision.CompareTag("Gai,Axit") || collision.gameObject.CompareTag("XoayTrap") || collision.gameObject.CompareTag("Enemy"))
+        if (collision.CompareTag("Gai,Axit") || collision.gameObject.CompareTag("XoayTrap")/* || collision.gameObject.CompareTag("Enemy")*/)
         {
             anim.SetBool("HitPlayer", false);
         }
     }
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if (collision.gameObject.CompareTag("XoayTrap") || collision.gameObject.CompareTag("Enemy"))
-    //    {
-    //        FindObjectOfType<GameSession>().PlayerDeath();
-    //    }
-    //}
-    /*    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
         {
-            if (collision.gameObject.CompareTag("Slime")) //Va chạm
-            {
-                    Debug.Log("Kich hoat anim");
-                    //anim.SetBool("PlayerHit", true);
-            }
+            anim.SetBool("HitPlayer", true);
+            FindObjectOfType<GameSession>().PlayerDeath();
         }
-        private void OnCollisionExit2D(Collision2D collision)
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy")) //Huỷ va chạm
         {
-            if (collision.gameObject.CompareTag("Slime")) //Huỷ va chạm
-            {
-                    Debug.Log("Huy anim");
-                    //anim.SetBool("PlayerHit", false);
-            }
-        }*/
+            Debug.Log("Huy anim");
+            anim.SetBool("HitPlayer", false);
+            //anim.SetBool("PlayerHit", false);
+        }
+    }
 }

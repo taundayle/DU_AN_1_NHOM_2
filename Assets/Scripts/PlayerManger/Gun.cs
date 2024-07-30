@@ -44,7 +44,7 @@ public class Gun : MonoBehaviour
     }
     void Attack()
     {
-        if(Input.GetKeyUp(KeyCode.J) || Input.GetMouseButtonUp(0))
+        if(Input.GetKeyUp(KeyCode.J))
         {
             Instantiate(attackprefabs, attackspawn.position, transform.rotation);
         }
@@ -52,7 +52,7 @@ public class Gun : MonoBehaviour
     }
     void Ban()
     {
-        if (Input.GetKeyUp(KeyCode.J) || Input.GetMouseButtonUp(0))
+        if (Input.GetKeyUp(KeyCode.J))
         {
             if (bullets >= 1)
             {
@@ -70,7 +70,7 @@ public class Gun : MonoBehaviour
     }
     void Ulti()
     {
-        if (Input.GetKeyUp(KeyCode.J) || Input.GetMouseButtonUp(0))
+        if (Input.GetKeyUp(KeyCode.J))
         {
             if (bullets >= 3)
             {

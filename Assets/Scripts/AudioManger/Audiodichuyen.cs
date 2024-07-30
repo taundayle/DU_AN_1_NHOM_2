@@ -188,7 +188,7 @@ public class Audiodichuyen : MonoBehaviour
     
     void Shoot()
     {
-        if (anim.chem == true && Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.J))
+        if (anim.chem == true && Input.GetKeyUp(KeyCode.J))
         {
             // Kiểm tra xem âm thanh đã được phát chưa
             //if (!isShooting)
@@ -197,7 +197,7 @@ public class Audiodichuyen : MonoBehaviour
             //isShooting = true; // Đánh dấu là đang phát âm thanh
             //}
         }
-        else if (anim.ban == true && Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.J))
+        else if (anim.ban == true && Input.GetKeyUp(KeyCode.J))
         {
             //if (isShooting)
             //{
@@ -205,12 +205,12 @@ public class Audiodichuyen : MonoBehaviour
             //isShooting = true; // Đánh dấu là không còn phát âm thanh nữa
             //}
         }
-        else if (anim.ulti == true && Input.GetMouseButtonUp(0) || Input.GetKeyUp(KeyCode.J))
+        else if (anim.ulti == true && Input.GetKeyUp(KeyCode.J))
         {
             ultisoundSource.PlayOneShot(ultisound);
             //isShooting = true;
         }
-        else if(Input.GetMouseButton(0) || Input.GetKey(KeyCode.J))
+        else if(Input.GetKey(KeyCode.J))
         {
             chemsoundSource.Stop();
             ultisoundSource.Stop();

@@ -23,7 +23,7 @@ public class GhostController : MonoBehaviour
             transform.position += direction * speed * Time.deltaTime;
 
             // Kiểm tra khoảng cách giữa bóng ma và người chơi
-            if (Vector3.Distance(transform.position, player.position) < 0.1f)
+            if (Vector3.Distance(transform.position, player.position) < 0.04f)
             {
                 // Bóng ma biến mất
                 Destroy(gameObject);

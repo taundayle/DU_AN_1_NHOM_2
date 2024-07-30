@@ -66,7 +66,7 @@ public class Anim_Player : MonoBehaviour
     {
         if (chem == true)
         {
-            if(Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+            if(Input.GetKey(KeyCode.J))
             {
                 anim.SetBool("Gun", true);
             }
@@ -80,7 +80,7 @@ public class Anim_Player : MonoBehaviour
     {
         if (ban == true)
         {
-            if (Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+            if (Input.GetKey(KeyCode.J))
             {     
                 anim.SetBool("Gun2", true);
             }
@@ -94,7 +94,7 @@ public class Anim_Player : MonoBehaviour
     {
         if (ulti == true)
         {
-            if (Input.GetKey(KeyCode.J) || Input.GetMouseButton(0))
+            if (Input.GetKey(KeyCode.J))
             {
                 anim.SetBool("Gun3", true);
             }

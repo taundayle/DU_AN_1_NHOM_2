@@ -10,8 +10,8 @@ public class Enemyground : MonoBehaviour
     GameObject player;
     Animator anim;
 
-    [SerializeField] private float timer = 0f;
-    [SerializeField] public float cooldown = 0.65f;
+    //[SerializeField] private float timer = 0f;
+    //[SerializeField] public float cooldown = 0.65f;
 
     //public Vector3 attackAreaOffSet;
     //public float attackRange = 1f;
@@ -58,7 +58,7 @@ public class Enemyground : MonoBehaviour
         Run();
         Flip();
     }
-    private void OnTriggerStay2D(Collider2D other1)
+/*    private void OnTriggerStay2D(Collider2D other1)
     {
 
         if (other1.CompareTag("Player"))
@@ -87,7 +87,7 @@ public class Enemyground : MonoBehaviour
                 timer = 0f;
             }
         }
-    }
+    }*/
 /*    public void AttackPlayer()
     {
         Vector3 pos = transform.position;
