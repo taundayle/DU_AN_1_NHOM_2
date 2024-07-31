@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     Animator anim;
     private MoveInput gameInput;
     public float moveSpeed = 5f;
-    public float jumpForce = 10f;
+    public float jumpForce = 12f;
     private Rigidbody2D rig;
     public Transform groundCheck;
     public LayerMask groundLayer;
@@ -110,7 +110,7 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Ladder")) //Rời khỏi cầu thang
         {
             isClimbing = false;
-            rig.gravityScale = 4f;
+            rig.gravityScale = 2.5f;
         }
         if (collision.CompareTag("Gai,Axit") || collision.gameObject.CompareTag("XoayTrap")/* || collision.gameObject.CompareTag("Enemy")*/)
         {
