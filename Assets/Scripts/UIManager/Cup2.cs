@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class Cup2 : MonoBehaviour
 {
     public float moveSpeed = 2f;        // Tốc độ di chuyển của cúp
-    public float scaleSpeed = 3f;       // Tốc độ phóng to của cúp
-    public Vector3 targetPosition;      // Vị trí mục tiêu (giữa màn hình)
+    public float scaleSpeed = 1f;       // Tốc độ phóng to của cúp
     public float targetScale = 3f;      // Kích thước mục tiêu
+    public GameObject endGamePanel;     // Tham chiếu đến panel kết thúc trò chơi
 
-    private bool isMoving = false;
+    private bool isMoving = false;      // Kiểm tra xem cúp đang di chuyển hay không
+    private Vector3 targetPosition;     // Vị trí mục tiêu (giữa màn hình)
 
     void Start()
     {
@@ -48,7 +49,10 @@ public class Cup2 : MonoBehaviour
             yield return null;
         }
 
-        // Chuyển đến cảnh "Win" sau khi cúp đã di chuyển và phóng to xong
-        SceneManager.LoadScene("Win");
+        // Hiện panel kết thúc trò chơi sau khi cúp đã di chuyển và phóng to xong
+        endGamePanel.SetActive(true);
+
+        // Dừng trò chơi
+        Time.timeScale = 0;
     }
 }

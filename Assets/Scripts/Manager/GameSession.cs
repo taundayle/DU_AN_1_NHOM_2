@@ -175,4 +175,9 @@ public class GameSession : MonoBehaviour
             Debug.Log("Load lai scene");
             Destroy(gameObject); //destroy gamesession luôn
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
