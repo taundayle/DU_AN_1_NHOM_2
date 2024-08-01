@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Anim_Player : MonoBehaviour
 {
@@ -46,6 +47,7 @@ public class Anim_Player : MonoBehaviour
             ban = false;
         }
     }
+
     void Run()
     {
         float moveInput = gameInput.HorizontalInput;

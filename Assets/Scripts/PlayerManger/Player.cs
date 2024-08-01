@@ -90,6 +90,13 @@ public class Player : MonoBehaviour
         {
             float climbInput = Input.GetAxisRaw("Vertical");                        //Ấn phím để leo cầu thang
             rig.velocity = new Vector2(rig.velocity.x, climbInput * climbspeed);
+            anim.SetBool("Climb", Mathf.Abs(climbInput) > Mathf.Epsilon);
+
+        }
+        if (!isClimbing)
+        {
+            anim.SetBool("Climb", false);
+
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -98,6 +105,7 @@ public class Player : MonoBehaviour
         {
             isClimbing = true;
             rig.gravityScale = 0f;
+
         }
         if (collision.CompareTag("Gai,Axit") || collision.gameObject.CompareTag("XoayTrap")/* || collision.gameObject.CompareTag("Enemy")*/)
         {
