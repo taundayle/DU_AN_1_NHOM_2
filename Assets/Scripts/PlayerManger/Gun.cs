@@ -36,7 +36,7 @@ public class Gun : MonoBehaviour
     }
     public void AddBullet(int num)
     {
-        if (bullets < 10)
+        if (bullets < 20)
         {
             bullets += num;
         }
