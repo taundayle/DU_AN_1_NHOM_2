@@ -269,7 +269,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 40
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -558,8 +558,8 @@ MonoBehaviour:
   paner: {fileID: 7151607318201747737}
   healthSlider: {fileID: 1428913217400467381}
   easeHealthSlider: {fileID: 3625795841832834552}
-  maxhealth: 40
-  health: 40
+  maxhealth: 100
+  health: 100
 --- !u!114 &3087621532108811486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +767,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 40
+  m_MaxValue: 100
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
