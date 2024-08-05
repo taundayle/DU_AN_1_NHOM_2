@@ -40274,6 +40274,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -27.119995
       objectReference: {fileID: 0}
+    - target: {fileID: 4040650101475035945, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4732258500580126106, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1355561281, guid: 09b515712a1e5e2499cdfe5e89ae0efa, type: 3}
     - target: {fileID: 5649375760700091247, guid: f69b4c1b5e7df7048b65081bb1b628f1, type: 3}
       propertyPath: m_Camera
       value: 
