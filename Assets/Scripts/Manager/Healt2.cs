@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Health : MonoBehaviour
+public class Health2 : MonoBehaviour
 {
     public Slider healthSlider;
     public Slider easeHealthSlider;
@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
         }
         if (healthSlider.value != easeHealthSlider.value)
         {
-            easeHealthSlider.value = Mathf.Lerp(easeHealthSlider.value, health, lerpSpeed);
+            healthSlider.value = Mathf.Lerp(healthSlider.value, health, lerpSpeed);
         }
     }
 }
