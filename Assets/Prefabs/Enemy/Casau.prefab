@@ -120,7 +120,7 @@ RectTransform:
   m_Father: {fileID: 7479591673437599042}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -457,6 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94e8e752a93e6ae4aa2e6c685db509aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paner: {fileID: 8214292597365114353}
   healthSlider: {fileID: 4663706594977724809}
   easeHealthSlider: {fileID: 6942079710758136894}
   maxhealth: 10
@@ -554,7 +555,7 @@ RectTransform:
   m_Father: {fileID: 7531278782987857185}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -0.013000011, y: 0}
   m_SizeDelta: {x: 0.046692, y: 0}
   m_Pivot: {x: 0, y: 0.5}
@@ -689,7 +690,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3473917664511497403
 RectTransform:
   m_ObjectHideFlags: 0

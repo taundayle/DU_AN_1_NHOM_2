@@ -19,6 +19,8 @@ public class BossWeapon : MonoBehaviour
         if (collBoss != null)
         {
             FindAnyObjectByType<GameSession>().PlayerDeath();
+            FindAnyObjectByType<GameSession>().TakeLife(1);
+            FindAnyObjectByType<GameSession>().TakeShell(2);
         }
     }
     void OnDrawGizmosSelected()

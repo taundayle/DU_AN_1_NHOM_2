@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
+    public GameObject paner;
     public Slider healthSlider;
     public Slider easeHealthSlider;
     public float maxhealth = 10;
@@ -15,6 +16,7 @@ public class Health : MonoBehaviour
     public void TakeLife(int num)
     {
         health -= num;
+        paner.SetActive(true);
     }
 
     void Start()

@@ -16,7 +16,6 @@ public class GameSession : MonoBehaviour
         return oofsound;
     }
     //
-
     public int playerlives = 3;
     public int shell = 0;
     public int score = 0;
@@ -41,6 +40,7 @@ public class GameSession : MonoBehaviour
     private void Update()
     {
         bulletText.text = bullet.ToString();
+
     }
 
     private void Awake()
