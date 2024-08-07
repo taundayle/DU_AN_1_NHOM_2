@@ -8,6 +8,10 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
+    //
+    public GameObject tt;
+    public bool truee = true;
+    //
     // Âm thanh và animation nhân vật bị đánh
     [SerializeField] AudioClip oofsound;
     private AudioSource oofsoundSource; //bị đánh
@@ -41,6 +45,19 @@ public class GameSession : MonoBehaviour
     {
         bulletText.text = bullet.ToString();
 
+        if (Input.GetKeyDown(KeyCode.T) && truee)
+        {
+            Time.timeScale = 0;
+            tt.SetActive(true);
+            truee = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.T) && !truee)
+        {
+            Time.timeScale = 1;
+            tt.SetActive(false);
+            truee = true;
+        }
+
     }
 
     private void Awake()
@@ -66,6 +83,10 @@ public class GameSession : MonoBehaviour
         {
             oofsoundSource.Stop();
         }
+    }
+    public void up1()
+    {
+        AudioSource.PlayClipAtPoint(oofsound, Camera.main.transform.position);
     }
 
     public void PlayerDeath()
@@ -180,4 +201,5 @@ public class GameSession : MonoBehaviour
     {
         Application.Quit();
     }
+
 }
