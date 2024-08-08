@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletUlti : MonoBehaviour
 {
-    public int damage;
+    public int damage = 10;
     public float speedbullet;
     private Rigidbody2D Bullett;
     private Transform player; //Tham chiếu tới player
@@ -25,6 +25,11 @@ public class BulletUlti : MonoBehaviour
         }
         Destroybullet();
     }
+    public void Up3(int num)
+    {
+        damage += num;
+    }
+
     void moveBullet()
     {
         // Thiết lập vận tốc theo trục x dựa trên hướng của người chơi

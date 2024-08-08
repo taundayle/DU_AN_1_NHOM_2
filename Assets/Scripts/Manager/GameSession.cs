@@ -25,8 +25,9 @@ public class GameSession : MonoBehaviour
     public int shell = 0;
     public int score = 0;
     public int bullet = 0;
+    public int total = 0;
+    public TMPro.TextMeshProUGUI totalscoreText;
     public TMPro.TextMeshProUGUI scoreText;
-    public TMPro.TextMeshProUGUI scoreeeText;
     public TMPro.TextMeshProUGUI scoreeText;
     public TMPro.TextMeshProUGUI bulletText;
     public Slider liveSlider;
@@ -38,11 +39,19 @@ public class GameSession : MonoBehaviour
     public GameObject dame;
     public int damege = 0;
     public TMPro.TextMeshProUGUI dameText;
-    
+
+    //
+    public bool truee = true;
+    public GameObject tt;
+
+
+    //
+
     private void Start()
     {
         oofsoundSource = GetComponent<AudioSource>(); //âm thanh
         scoreText.text = score.ToString();
+        totalscoreText.text = total.ToString();
         scoreEnemy.text = enemy.ToString();
         dameText.text = dame.ToString();
         liveSlider.value = playerlives;
@@ -51,9 +60,30 @@ public class GameSession : MonoBehaviour
 
     private void Update()
     {
+        dameText.text = damege.ToString();
         bulletText.text = bullet.ToString();
+        totalscoreText.text = totalscoreText.text;
+        scoreText.text = score.ToString();
         scoreeText.text = scoreText.text;
-        scoreeeText.text = scoreText.text;
+        //
+        slider.value = dd;
+        slider2.value = dd2;
+        slider3.value = dd3;
+
+        //
+        if (Input.GetKeyDown(KeyCode.T) && truee)
+        {
+            Time.timeScale = 0;
+            tt.SetActive(true);
+            truee = false;
+        }
+        else if (Input.GetKeyDown(KeyCode.T) && !truee)
+        {
+            Time.timeScale = 1;
+            tt.SetActive(false);
+            truee = true;
+        }
+
     }
 
     private void Awake()
@@ -110,6 +140,11 @@ public class GameSession : MonoBehaviour
             }
         }
     }
+    public void TotalCoin(int num)
+    {
+        total += num;
+        totalscoreText.text = total.ToString();
+    }
     public void DamegePlayer(int num)
     {
         damege += num;
@@ -142,6 +177,78 @@ public class GameSession : MonoBehaviour
         takedamage = false;
     }
 
+    //
+
+    [SerializeField] AudioClip success;
+    [SerializeField] AudioClip oof;
+    public int dd;
+    public int dd2;
+    public int dd3;
+    public Slider slider;
+    public Slider slider2;
+    public Slider slider3;
+
+    public void Up1()
+    {
+        if (score >= 1)
+        {
+            if (dd < 11)
+            {
+                dd += 1;
+                //FindAnyObjectByType<AttackArea>().Up1(1);
+                CoinCount(1);
+                AudioSource.PlayClipAtPoint(success, Camera.main.transform.position);
+
+            }
+
+        }
+        else
+        {
+            AudioSource.PlayClipAtPoint(oof, Camera.main.transform.position);
+
+        }
+    }
+    public void Up2()
+    {
+        if (score >= 3)
+        {
+            if (dd2 < 11)
+            {
+                dd2 += 1;
+                //FindAnyObjectByType<Bullet>().Up2(1);
+                CoinCount(3);
+                AudioSource.PlayClipAtPoint(success, Camera.main.transform.position);
+
+            }
+
+        }
+        else
+        {
+            AudioSource.PlayClipAtPoint(oof, Camera.main.transform.position);
+
+        }
+    }
+    public void Up3()
+    {
+        if (score >= 5)
+        {
+            if (dd3 < 11)
+            {
+                dd3 += 1;
+                //FindAnyObjectByType<BulletUlti>().Up3(1);
+                CoinCount(5);
+                AudioSource.PlayClipAtPoint(success, Camera.main.transform.position);
+
+            }
+
+        }
+        else
+        {
+            AudioSource.PlayClipAtPoint(oof, Camera.main.transform.position);
+
+        }
+    }
+
     public void GameOver()
     {
         Time.timeScale = 0; // Dừng game
@@ -153,6 +260,7 @@ public class GameSession : MonoBehaviour
     {
         score += num;
         scoreText.text = score.ToString();
+        TotalCoin(1);
     }
 
     public void AddBullet(int num)
@@ -168,6 +276,11 @@ public class GameSession : MonoBehaviour
     {
         bullet -= num;
         bulletText.text = bullet.ToString();
+    }
+    public void CoinCount(int num)
+    {
+        score -= num;
+        scoreText.text = score.ToString();
     }
 
     public void AddShell(int num) //Thêm giáp
