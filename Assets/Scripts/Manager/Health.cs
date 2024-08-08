@@ -32,7 +32,10 @@ public class Health : MonoBehaviour
         }
         if (health <= 0)
         {
+            FindAnyObjectByType<GameSession>().TakeEnemy(1);
+
             Destroy(gameObject);
+
         }
         if (healthSlider.value != easeHealthSlider.value)
         {

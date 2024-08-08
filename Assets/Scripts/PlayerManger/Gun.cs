@@ -6,6 +6,9 @@ using System;
 
 public class Gun : MonoBehaviour
 {
+    public GameObject gg;
+    public float tiem;
+    public bool tiemm;
     public int bullets = 0;
     Player pl;
     [SerializeField] Transform bulletspawn;
@@ -83,6 +86,7 @@ public class Gun : MonoBehaviour
             {
                 isShooting = false;
                 Debug.Log("Không đủ năng lượng");
+
             }
         }
     }
@@ -99,18 +103,15 @@ public class Gun : MonoBehaviour
                 ulti = true;
                 ban = false;
                 chem = false;
-                if (ulti == true)
-                {
-                    Ulti();
-                    Debug.Log("Đã đổi chiêu 3");
-                }
+                Debug.Log("Đã đổi chiêu 3");
             }
             else
             {
                 ulti = false;
-                chem = true;
+                chem = false;
                 ban = false;
                 Debug.Log("Không đủ năng lượng");
+
             }
         }
         if (Input.GetKeyDown(KeyCode.Alpha2)) //Bắn kích hoạt
@@ -125,12 +126,13 @@ public class Gun : MonoBehaviour
             else
             {
                 ban = false;
-                chem = true;
+                chem = false;
                 ulti = false;
                 Debug.Log("Không đủ năng lượng");
+
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha1)) //Chém kích hoạt
+        if (Input.GetKeyDown(KeyCode.Alpha1)) //Chém kích hoạt
         {
             ban = false;
             chem = true;
@@ -141,11 +143,11 @@ public class Gun : MonoBehaviour
         {
             Ban();
         }
-        else if (chem == true)
+        if (chem == true)
         {
             Attack();
         }
-        else if(ulti == true)
+        if(ulti == true)
         {
             Ulti();
         }

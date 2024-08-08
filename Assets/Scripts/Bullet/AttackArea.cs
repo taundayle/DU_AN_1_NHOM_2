@@ -13,7 +13,10 @@ public class AttackArea : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
+    }
+    public void Up1(int num)
+    {
+        damage += num;
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -21,6 +24,7 @@ public class AttackArea : MonoBehaviour
         {
             Health health = collider.GetComponent<Health>();
             health.TakeLife(damage);
+            Destroy(gameObject);
         }
     }
 

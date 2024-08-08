@@ -34,13 +34,13 @@ public class Anim_Player : MonoBehaviour
             ban = true;
             chem = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             chem = true;
             ulti = false;
             ban = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3)) 
+        if (Input.GetKeyDown(KeyCode.Alpha3)) 
         {
             ulti = true;
             chem = false;

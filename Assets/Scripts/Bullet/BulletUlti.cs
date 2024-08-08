@@ -44,6 +44,7 @@ public class BulletUlti : MonoBehaviour
         {
             Health health = collider.GetComponent<Health>();
             health.TakeLife(damage);
+            isBullet = false;
         }
         //if (collision.CompareTag("Player"))
         //{

@@ -8,10 +8,8 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
-    //
-    public GameObject tt;
-    public bool truee = true;
-    //
+    [SerializeField] public bool countcoin = true;
+    public GameObject Ui;
     // Âm thanh và animation nhân vật bị đánh
     [SerializeField] AudioClip oofsound;
     private AudioSource oofsoundSource; //bị đánh
@@ -20,23 +18,33 @@ public class GameSession : MonoBehaviour
         return oofsound;
     }
     //
+    public TMPro.TextMeshProUGUI scoreEnemy;
+    public int enemy = 0;
+    //
     public int playerlives = 3;
     public int shell = 0;
     public int score = 0;
     public int bullet = 0;
     public TMPro.TextMeshProUGUI scoreText;
+    public TMPro.TextMeshProUGUI scoreeeText;
+    public TMPro.TextMeshProUGUI scoreeText;
     public TMPro.TextMeshProUGUI bulletText;
     public Slider liveSlider;
     public Slider liveSliderhe;
     public GameObject gameOverUI; // Thêm biến tham chiếu đến UI "You Lose"
     [SerializeField] bool takedamage = false;
-
+    public GameObject endgame;
+    public GameObject scoregame;
+    public GameObject dame;
+    public int damege = 0;
+    public TMPro.TextMeshProUGUI dameText;
+    
     private void Start()
     {
         oofsoundSource = GetComponent<AudioSource>(); //âm thanh
-
-
         scoreText.text = score.ToString();
+        scoreEnemy.text = enemy.ToString();
+        dameText.text = dame.ToString();
         liveSlider.value = playerlives;
         liveSliderhe.value = shell;
     }
@@ -44,20 +52,8 @@ public class GameSession : MonoBehaviour
     private void Update()
     {
         bulletText.text = bullet.ToString();
-
-        if (Input.GetKeyDown(KeyCode.T) && truee)
-        {
-            Time.timeScale = 0;
-            tt.SetActive(true);
-            truee = false;
-        }
-        else if (Input.GetKeyDown(KeyCode.T) && !truee)
-        {
-            Time.timeScale = 1;
-            tt.SetActive(false);
-            truee = true;
-        }
-
+        scoreeText.text = scoreText.text;
+        scoreeeText.text = scoreText.text;
     }
 
     private void Awake()
@@ -84,9 +80,12 @@ public class GameSession : MonoBehaviour
             oofsoundSource.Stop();
         }
     }
-    public void up1()
+    public void EndGame()
     {
-        AudioSource.PlayClipAtPoint(oofsound, Camera.main.transform.position);
+        Time.timeScale = 0;
+        Ui.SetActive(false);
+        scoregame.SetActive(false); 
+        endgame.SetActive(true);
     }
 
     public void PlayerDeath()
@@ -111,12 +110,22 @@ public class GameSession : MonoBehaviour
             }
         }
     }
-
+    public void DamegePlayer(int num)
+    {
+        damege += num;
+        dameText.text = damege.ToString();
+    }
+    public void TakeEnemy(int num)
+    {
+        enemy += num;
+        scoreEnemy.text = enemy.ToString();
+    }
     //đoạt giáp
     public void TakeShell(int num)
     {
         shell -= num; // giảm mạng
         liveSliderhe.value = shell;
+        DamegePlayer(1);
         takedamage = false;
     }
     //đoạt mạng
@@ -124,6 +133,7 @@ public class GameSession : MonoBehaviour
     {
         playerlives -= num; // giảm mạng
         liveSlider.value = playerlives;
+        DamegePlayer(1);
 
         if (playerlives <= 0)
         {
@@ -136,6 +146,7 @@ public class GameSession : MonoBehaviour
     {
         Time.timeScale = 0; // Dừng game
         gameOverUI.SetActive(true); // Hiển thị màn hình "You Lose"
+        Ui.SetActive(false);
     }
 
     public void AddScore(int num)
