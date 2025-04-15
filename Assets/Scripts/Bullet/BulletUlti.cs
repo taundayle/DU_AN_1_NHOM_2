@@ -2,14 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletUlti : MonoBehaviour
+public class BulletUlti : BulletManager
 {
-    public int damage = 10;
-    public float speedbullet;
-    private Rigidbody2D Bullett;
-    private Transform player; //Tham chiếu tới player
-    private bool isBullet = true;
-    private float timer;
     void Start()
     {
         Bullett = GetComponent<Rigidbody2D>();
@@ -21,7 +15,7 @@ public class BulletUlti : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > 1.5)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         Destroybullet();
     }

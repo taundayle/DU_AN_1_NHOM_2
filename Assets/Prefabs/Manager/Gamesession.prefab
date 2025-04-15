@@ -1896,6 +1896,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2417915953747901409}
+  - {fileID: 1930109424977248984}
   m_Father: {fileID: 7700026759863780762}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2082,18 +2083,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3460231769921708064}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2866.338}
+  m_LocalScale: {x: 31.848202, y: 31.848202, z: 31.848202}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1881819052383526375}
   - {fileID: 3736753129073924994}
   - {fileID: 3459800729450397676}
-  m_Father: {fileID: 7700026759863780762}
+  m_Father: {fileID: 7762234459156904573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: -5}
+  m_AnchoredPosition: {x: 11203.561, y: 7173.17}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2614380835397235789
@@ -5120,7 +5121,6 @@ MonoBehaviour:
   total: 0
   totalscoreText: {fileID: 5237972382615696202}
   scoreText: {fileID: 7094186864879711820}
-  scoreeeText: {fileID: 5237972382615696202}
   scoreeText: {fileID: 5444023113280319157}
   bulletText: {fileID: 1139636991754779699}
   liveSlider: {fileID: 7670864817908142736}
@@ -6089,7 +6089,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7762234459156904573}
-  - {fileID: 1930109424977248984}
   - {fileID: 4859973303499789286}
   - {fileID: 2554860475447670799}
   - {fileID: 3514850846036463434}

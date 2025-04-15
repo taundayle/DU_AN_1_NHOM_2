@@ -2,26 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class Bullet : BulletManager
 {
-    public int damage = 3;
-    public float speedbullet;
-    private Rigidbody2D Bullett;
-    private Transform player; //Tham chiếu tới player
-    private bool isBullet = true;
-    private float timer;
     void Start()
     {
         Bullett = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        moveBullet();
+        MoveBullet();
     }
     private void Update()
     {
         timer += Time.deltaTime;
         if (timer > 1.5)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         Destroybullet();
     }
@@ -30,7 +24,7 @@ public class Bullet : MonoBehaviour
         damage += num;
     }
 
-    void moveBullet()
+    void MoveBullet()
     {
         // Thiết lập vận tốc theo trục x dựa trên hướng của người chơi
         Vector2 chiuchiu = player.transform.localScale.x > Mathf.Epsilon ? Vector2.right : Vector2.left;

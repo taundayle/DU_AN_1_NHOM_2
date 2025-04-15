@@ -8,7 +8,8 @@ using UnityEngine.UI;
 
 public class GameSession : MonoBehaviour
 {
-    [SerializeField] public bool countcoin = true;
+
+    [SerializeField] private bool countcoin = true;
     public GameObject Ui;
     // Âm thanh và animation nhân vật bị đánh
     [SerializeField] AudioClip oofsound;
@@ -195,12 +196,10 @@ public class GameSession : MonoBehaviour
             if (dd < 11)
             {
                 dd += 1;
-                //FindAnyObjectByType<AttackArea>().Up1(1);
+                FindObjectOfType<AttackArea>().Up1(1);
                 CoinCount(1);
                 AudioSource.PlayClipAtPoint(success, Camera.main.transform.position);
-
             }
-
         }
         else
         {
@@ -215,7 +214,7 @@ public class GameSession : MonoBehaviour
             if (dd2 < 11)
             {
                 dd2 += 1;
-                //FindAnyObjectByType<Bullet>().Up2(1);
+                FindObjectOfType<Bullet>().Up2(1);
                 CoinCount(3);
                 AudioSource.PlayClipAtPoint(success, Camera.main.transform.position);
 
@@ -235,7 +234,7 @@ public class GameSession : MonoBehaviour
             if (dd3 < 11)
             {
                 dd3 += 1;
-                //FindAnyObjectByType<BulletUlti>().Up3(1);
+                FindObjectOfType<BulletUlti>().Up3(1);
                 CoinCount(5);
                 AudioSource.PlayClipAtPoint(success, Camera.main.transform.position);
 
